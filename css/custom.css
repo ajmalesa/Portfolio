@@ -14,3 +14,12 @@ body {
     grid-row-end: 3;
 }
 /* End of sticking text box to bottom of screen */
+
+/* Margin for page when viewed on a screen with a width of at least 1080 pixels */
+@media only screen and (min-width: 1080px) {
+    body {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}
+/* End of margin for page when viewed on a screen with a width of at least 1080 pixels */
