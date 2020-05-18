@@ -2,13 +2,11 @@
 html {
     height: 100%;
 }
-
 body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
 }
-
 .text-box {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -23,3 +21,8 @@ body {
     }
 }
 /* End of margin for page when viewed on a screen with a width of at least 1080 pixels */
+
+/* Set minimum height for text box so it does not have an expanding effect */
+.nes-container.is-rounded.is-dark.with-title {
+    min-height: 165px;
+}
