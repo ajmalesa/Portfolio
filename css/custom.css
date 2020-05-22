@@ -1,4 +1,4 @@
-/* Start stick text box to bottom of screen */
+/* Stick text box to bottom of screen */
 html {
     height: 100%;
 }
@@ -7,7 +7,7 @@ body {
     display: grid;
     grid-template-rows: 1fr auto;
 }
-.text-box {
+#text-box {
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -26,3 +26,17 @@ body {
 .nes-container.is-rounded.is-dark.with-title {
     min-height: 175px;
 }
+/* End set minimum height for text box so it does not have an expanding effect */
+
+/* Center main content */
+#display-content {
+    position: relative;
+}
+#avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End center main content */
+
