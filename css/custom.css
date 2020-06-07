@@ -6,6 +6,8 @@ body {
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
+    background-color: antiquewhite;
+    cursor: none;
 }
 #text-box {
     grid-row-start: 2;
@@ -22,15 +24,53 @@ body {
 }
 /* End of margin for page when viewed on a screen with a width of at least 1080 pixels */
 
+/* Set maximum height for menu and background to a dark color */
+#menu {
+    max-height: 100%;
+    background-color: #212529;
+    padding: 1rem 0;
+    font-size: 13px;
+}
+/* End Set maximum height for menu and background to a dark color */
+
+/* Set color of menu labels to white */
+.menu-label {
+    color: white;
+}
+/* End Set color of menu labels to white */
+
+.nes-radio:checked+span::before {
+    color: white!important;
+}
+
 /* Set minimum height for text box so it does not have an expanding effect */
 .nes-container.is-rounded.is-dark.with-title {
     min-height: 175px;
 }
 /* End set minimum height for text box so it does not have an expanding effect */
 
+/* Float selectable options to the right and add margin to the bottom so they don't overlap */
+.selections {
+    float: right;
+}
+.options {
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* End Float selectable options to the right and add margin to the bottom so they don't overlap */
+
+/* Move save and exit button to the right */
+.save-and-exit {
+    float: right;
+}
+/* End Move save and exit button to the right */
+
 /* Center main content */
 #display-content {
-    position: relative;
+    /* The line below part does not seem to be needed for centering content but leaving
+    it in seems to push avatar below text box */
+    /* position: relative; */ 
 }
 #avatar {
     position: absolute;
@@ -39,4 +79,18 @@ body {
     transform: translate(-50%, -50%);
 }
 /* End center main content */
+
+/* Animate avatar fading in */
+#avatar {
+    animation: pulse 5s;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* End animate avatar fading in */
 
