@@ -30,7 +30,7 @@ var options = {
 // Set options for text that will be typed
 var options2 = {
   strings: [
-    "^1300 Which thing do you want to open" 
+    "^1300 Which thing do you want to open?" 
   ],
   typeSpeed: typeSpeedSetByUser,
   showCursor: false,
