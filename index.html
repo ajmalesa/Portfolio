@@ -15,49 +15,8 @@
 
 
 <body onload="myFunction()">
-    <!-- The actual snackbar -->
+    
     <div id="snackbar">ESC to enable mouse</div>
-
-    <div id="menu" style="display:none">
-        <div class="options">  
-            <span class="menu-label">TEXT SPEED:</span>
-            <span class="selections">
-                <label>
-                    <input type="radio" class="nes-radio is-dark" name="text-speed" value="80" onchange="handleClick(this)" autofocus checked />
-                    <span>SLOW</span>
-                </label>
-                <label>
-                    <input type="radio" class="nes-radio is-dark" name="text-speed" value="50" onchange="handleClick(this)" />
-                    <span>MEDIUM</span>
-                </label>
-                <label>
-                    <input type="radio" class="nes-radio is-dark" name="text-speed" value="20" onchange="handleClick(this)" />
-                    <span>FAST</span>
-                </label>
-            </span>
-        </div>
-
-        <div class="options">
-            <span class="menu-label">TEXT COLOR:</span>
-            <span class="selections">
-                <label>
-                    <input type="radio" class="nes-radio" name="color" value="80" onchange="handleClick(this)" />
-                    <span class="nes-text is-error">RED</span>
-                </label>
-                <label>
-                    <input type="radio" class="nes-radio" name="color" value="50" onchange="handleClick(this)" />
-                    <span class="nes-text is-success">GREEN</span>
-                </label>
-                <label>
-                    <input type="radio" class="nes-radio" name="color" value="20" onchange="handleClick(this)" checked/>
-                    <span class="nes-text is-primary">BLUE</span>
-                </label>
-            </span>
-        </div>
-
-        <div class="options save-and-exit">
-            <button class="nes-btn is-primary">SAVE AND EXIT</button>
-        </div>
 
     </div>
     
@@ -71,13 +30,15 @@
 
     <footer id="text-box">
         <div class="nes-container is-rounded is-dark with-title">
-            <span class="title">Introduction</span>
+            <span class="title">Ajmal</span>
             <span id="dialog"></span>
-        </div>
+
+            <span class="blink" id="down-arrow" hidden>▼</span>
+        </div>   
     </footer>
 
-    <script src="js/typer.js"></script>
-    <script src="js/controls.js"></script>
+    <script src="js/script.js"></script>
+    
 
 </body>
 
