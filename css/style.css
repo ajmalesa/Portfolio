@@ -1,0 +1,4 @@
+/* Override the default border on filter options */
+.uk-grid-divider>:not(.uk-first-column)::before {
+    border-left: 0px solid #e5e5e5;
+}
