@@ -1,4 +1,17 @@
-/* Override the default border on filter options */
+/* Remove the default border on filter options */
 .uk-grid-divider>:not(.uk-first-column)::before {
     border-left: 0px solid #e5e5e5;
+}
+
+/* Remove the default border around images in the card */
+.uk-button-default {
+    background-color: transparent;
+    color: #333;
+    border: 0px solid #e5e5e5;
+}
+
+html {
+    height: 100%;
+    background-color: #efbcbc6e;
+    
 }
