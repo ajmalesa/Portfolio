@@ -17,7 +17,6 @@
 <body>
 
     <nav class="uk-background-secondary uk-light uk-navbar ">
-        
             <!-- Name display on the left -->
             <div class="uk-navbar-left uk-margin-large-left">
                 <a href="" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
@@ -49,40 +48,47 @@
                 </div>
             </div>
             <!-- /Mobile Navigation Menu On The Right -->
-        
     </nav>
 
-
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top">
-        <div class="uk-container-center" data-uk-grid="{gutter: 20}" uk-filter="target: .js-filter">
-            
-            <!-- Filter selection -->
-            <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
-                <div>
-                    <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                        <li class="uk-active uk-text-bold" uk-filter-control><a href="#">All</a></li>
-                    </ul>
+        <div uk-filter="target: .js-filter">
+
+            <!-- Filter and sort selection -->
+            <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+        
+                    <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="filter: [project-type='work']; group: project-type"><a href="#">Work</a></li>
+                                <li uk-filter-control="filter: [project-type='personal']; group: project-type"><a href="#">Personal</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                                <li uk-filter-control="filter: [primary-language='JavaScript']; group: primary-language"><a href="#">JavaScript</a></li>
+                                <li uk-filter-control="filter: [primary-language='Java']; group: primary-language"><a href="#">Java</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        
                 </div>
-                <div>
-                    <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                        <li uk-filter-control="filter: [project-type='work']; group: project-type"><a href="#">Work</a></li>
-                        <li uk-filter-control="filter: [project-type='personal']; group: project-type"><a href="#">Personal</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                        <li uk-filter-control="filter: [primary-language='JavaScript']; group: primary-language"><a href="#">JavaScript</a></li>
-                        <li uk-filter-control="filter: [primary-language='PHP']; group: primary-language"><a href="#">PHP</a></li>
-                        <li uk-filter-control="filter: [primary-language='Java']; group: primary-language"><a href="#">Java</a></li>
-                    </ul>
+                <div class="uk-width-auto uk-text-nowrap">
+                    <span class="uk-active" uk-filter-control="sort: data-name"><a class="uk-icon-link" href="#" uk-icon="icon: arrow-down"></a></span>
+                    <span uk-filter-control="sort: data-name; order: desc"><a class="uk-icon-link" href="#" uk-icon="icon: arrow-up"></a></span>
                 </div>
             </div>
-            <!-- /Filter selection -->
+            <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
+            <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true">
                 <!-- Individual projects -->
-                <li project-type="personal" primary-language="JavaScript">
+                <li project-type="personal" primary-language="JavaScript" data-name="Clicker Web Game">
                     <div class="uk-card uk-card-default uk-card-body uk-card-hover">
                         <div class="uk-card-media-top">
                             <div uk-lightbox>
@@ -106,9 +112,8 @@
                     </div>
                 </li>
                 <!-- /Individual projects -->
-
                 <!-- Individual projects -->
-                <li project-type="personal" primary-language="Java">
+                <li project-type="personal" primary-language="Java" data-name="Clicker Android Game">
                     <div class="uk-card uk-card-default uk-card-body uk-card-hover">
                         <div class="uk-card-media-top">
                             <div uk-lightbox>
@@ -132,14 +137,9 @@
                     </div>
                 </li>
                 <!-- /Individual projects -->
-                
-
-
-
-                
             </ul>
             <!-- Masonry grid of all projects -->
-        
+
         </div>
     </div>
         
