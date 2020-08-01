@@ -10,8 +10,19 @@
     border: 0px solid #e5e5e5;
 }
 
+/* Set background color of whole page  */
 html {
     height: 100%;
     background-color: #e3e3e34d;
     
+}
+
+/* Make font size smaller on small screens */
+@media (max-width: 320px) {
+    .uk-card-footer {
+        font-size: 13px;
+    }
+    .project-links {
+        font-size: 10px;
+    } 
 }
