@@ -1,6 +1,6 @@
 /* Remove the default border on filter options */
 .uk-grid-divider>:not(.uk-first-column)::before {
-    border-left: 0px solid #e5e5e5;
+    border-left: 1px solid #9fa09f;
 }
 
 /* Remove the default border around images in the card */
