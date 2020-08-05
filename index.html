@@ -18,13 +18,13 @@
 
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky="animation: uk-animation-slide-top">
         <!-- Name display on the left -->
-        <div class="uk-navbar-left uk-margin-large-left" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+        <div class="uk-navbar-left uk-margin-large-left" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
             <a href="" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
         </div>
         <!-- /Name display on the left -->
     
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
-        <div class="uk-navbar-right uk-visible@m uk-margin-large-right" uk-scrollspy="cls: uk-animation-slide-top; repeat: true">
+        <div class="uk-navbar-right uk-visible@m uk-margin-large-right" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="/">Projects</a></li>
                 <!-- <li class=""><a href="#">About</a></li> -->
@@ -35,7 +35,7 @@
 
         <!-- Mobile Navigation Menu On The Right -->
         <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
-            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" uk-scrollspy="cls: uk-animation-slide-top; repeat: true"></a>
+            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" uk-scrollspy="cls: uk-animation-slide-top; repeat: false"></a>
         </div>
 
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
@@ -93,7 +93,7 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                 <!-- Individual project -->
                 <li project-type="personal" primary-language="JavaScript" platform="desktop" data-name="Clicker Web Game" >
                     <div class="uk-text-center">
