@@ -78,8 +78,8 @@
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [platform='mobile']; group: platform"><a href="#" class="uk-text-emphasis">Mobile</a></li>
-                                <li uk-filter-control="filter: [platform='desktop']; group: platform"><a href="#" class="uk-text-emphasis">Desktop</a></li>
+                                <li uk-filter-control="filter: [platform*='mobile']; group: platform"><a href="#" class="uk-text-emphasis">Mobile</a></li>
+                                <li uk-filter-control="filter: [platform*='desktop']; group: platform"><a href="#" class="uk-text-emphasis">Desktop</a></li>
                             </ul>
                         </div>
                     </div>
@@ -210,6 +210,49 @@
                             <div class="uk-modal-footer">
                                 <span class="uk-badge">PHP</span>
                                 <span class="uk-badge">JavaScript</span>
+                                <span class="uk-badge">CSS</span>
+                                <span class="uk-badge">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Details modal -->               
+                </li>
+                <!-- /Individual project -->
+                <!-- Individual project -->
+                <li project-type="work" primary-language="PHP" data-name="Shop" platform="mobile desktop">
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img src="img/shop-marketapts.png" alt="Screenshot of tracker program">
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h4 class="uk-card-title">Shop MarketApts</h4>
+                                        </div>
+                                        <div class="uk-card-footer">
+                                            <a href="https://shop.marketapts.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
+                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #shop-details">DETAILS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>  
+                    <!-- Details modal -->
+                    <div id="shop-details" uk-modal>
+                        <div class="uk-modal-dialog">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-header">
+                                <h2 class="uk-modal-title">Shop MarketApts</h2>    
+                            </div>
+                            <div class="uk-modal-body">
+                                <p>Shop for downloadable digital content. OpenCart base with PayPal, Google Signin & other integrations</p>
+                            </div>
+                            <div class="uk-modal-footer">
+                                <span class="uk-badge">E-COMMERCE</span>
+                                <span class="uk-badge">OPENCART</span>
+                                <span class="uk-badge">PHP</span>
+                                <span class="uk-badge">TWIG</span>
                                 <span class="uk-badge">CSS</span>
                                 <span class="uk-badge">HTML</span>
                             </div>
