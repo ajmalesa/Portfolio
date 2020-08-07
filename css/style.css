@@ -22,7 +22,10 @@ html {
     .uk-card-footer {
         font-size: 13px;
     }
+}
+
+@media (max-width: 1400px) {
     .project-links {
-        font-size: 10px;
+        font-size: 11px;
     } 
 }
