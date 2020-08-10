@@ -63,8 +63,6 @@ body {
     animation-delay: 10s;
     opacity: 0;
     background-color: none;
-    margin-left: 15px;
-    margin-right: 15px;
 }
 @keyframes pulse-table {
     from {
@@ -75,6 +73,22 @@ body {
     }
 }
 /* End fade table in  */
+
+/* Responsive table */
+@media (max-width: 560px) {
+    .nes-table-responsive {
+        font-size: 8px;
+    }
+}
+@media (max-width: 1079px) {
+    .nes-table-responsive {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/* End Responsive table */
+
+
 
 /* Make table transparent */
 .nes-table {
