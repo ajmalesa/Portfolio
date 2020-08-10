@@ -23,8 +23,8 @@
                 <tbody>
                     <tr>
                         <td>Clicker Website</td>
-                        <td><a href="https://github.com/ajmalesa/Clicker-Website" target="_blank">Code</td>
-                        <td><a href="https://ajmalesa.github.io/Clicker-Website/" target="_blank">Demo</td>
+                        <td><a href="https://github.com/ajmalesa/Clicker-Website" target="_blank">CODE</td>
+                        <td><a href="https://ajmalesa.github.io/Clicker-Website/" target="_blank">DEMO</td>
                         <td>
                             <a href="#" class="nes-badge">
                                 <span class="is-success">HTML</span>
@@ -39,8 +39,8 @@
                     </tr>
                     <tr>
                         <td>Clicker App</td>
-                        <td><a href="https://github.com/ajmalesa/Clicker-Android-App" target="_blank">Code</td>
-                        <td><a href="https://github.com/ajmalesa/Clicker-Android-App/releases/tag/V1.1.0" target="_blank">Demo</td>
+                        <td><a href="https://github.com/ajmalesa/Clicker-Android-App" target="_blank">CODE</td>
+                        <td><a href="https://github.com/ajmalesa/Clicker-Android-App/releases/tag/V1.1.0" target="_blank">APK</td>
                         <td>
                             <a href="#" class="nes-badge">
                                 <span class="is-success">JAVA</span>
