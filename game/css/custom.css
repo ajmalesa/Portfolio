@@ -1,0 +1,129 @@
+/* Stick text box to bottom of screen */
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: antiquewhite;
+}
+#text-box {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+/* End of sticking text box to bottom of screen */
+
+/* Margin for page when viewed on a screen with a width of at least 1080 pixels */
+@media only screen and (min-width: 1080px) {
+    body {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}
+/* End of margin for page when viewed on a screen with a width of at least 1080 pixels */
+
+/* Center main content */
+#avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* End center main content */
+
+/* Push table  */
+.nes-table-responsive {
+    margin-top: 25%;
+}
+/* Push table */
+
+/* Animate avatar fading in and out*/
+#avatar {
+    animation: pulse-avatar 14s;
+    opacity: 0;
+}
+@keyframes pulse-avatar {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+/* End animate avatar fading in and out*/
+
+/* Fade table in  */
+.nes-table-responsive {
+    -webkit-animation: pulse-table 5s forwards;
+    animation: pulse-table 5s forwards;
+    animation-delay: 10s;
+    opacity: 0;
+    background-color: none;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+@keyframes pulse-table {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade table in  */
+
+/* Make table transparent */
+.nes-table {
+    background-color: #00000000;
+}
+/* End Make table transparent */
+
+
+/* Set minimum height for text box so it does not have an expanding effect */
+.nes-container.is-rounded.is-dark.with-title {
+    min-height: 175px;
+}
+/* End set minimum height for text box so it does not have an expanding effect */
+
+
+/* Blinking effect for arrow */
+.blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for Safari 4.0 - 8.0 */
+    animation: 2s linear infinite condemned_blink_effect;
+}
+/* for Safari 4.0 - 8.0 */
+@-webkit-keyframes condemned_blink_effect { 
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+/* End blinking effect for arrow */
+
+/* Place arrow at bottom right of text box */
+#down-arrow {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+/* End place arrow at bottom right of text box */
