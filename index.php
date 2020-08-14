@@ -27,7 +27,7 @@
         <div class="uk-navbar-right uk-visible@m uk-margin-large-right" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="/">Projects</a></li>
-                <li class=""><a href="#">For Gamers</a></li>
+                <li class=""><a href="/games">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
             </ul>
         </div>
@@ -42,7 +42,7 @@
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li class="uk-active"><a href="/">Projects</a></li>
-                    <li class=""><a href="#">For Gamers</a></li>
+                    <li class=""><a href="/games">Games</a></li>
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li ><a href="/game" class="uk-text-emphasis">GAME</a></li>
+                                <li ><a href="/games" class="uk-text-emphasis">GAMES</a></li>
                             </ul>
                         </div>
                     </div>
