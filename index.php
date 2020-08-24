@@ -16,15 +16,15 @@
 </head>
 <body>
 
-    <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky="animation: uk-animation-slide-top">
+    <nav class="uk-background-secondary uk-light uk-navbar">
         <!-- Name display on the left -->
-        <div class="uk-navbar-left uk-margin-large-left" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+        <div class="uk-navbar-left uk-margin-large-left">
             <a href="" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
         </div>
         <!-- /Name display on the left -->
     
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
-        <div class="uk-navbar-right uk-visible@m uk-margin-large-right" uk-scrollspy="cls: uk-animation-slide-top; repeat: false">
+        <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="/">Projects</a></li>
                 <li class=""><a href="/games">Games</a></li>
@@ -35,7 +35,7 @@
 
         <!-- Mobile Navigation Menu On The Right -->
         <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
-            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" uk-scrollspy="cls: uk-animation-slide-top; repeat: false"></a>
+            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#"></a>
         </div>
 
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
@@ -50,7 +50,7 @@
         <!-- /Mobile Navigation Menu On The Right -->
     </nav>
 
-    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top" >
+    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-small-bottom" >
         <div uk-filter="target: .js-filter">
 
             <!-- Filter and sort selection -->
@@ -72,7 +72,7 @@
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
                                 <li uk-filter-control="filter: [primary-language='JavaScript']; group: primary-language"><a href="#" class="uk-text-emphasis">JavaScript</a></li>
-                                <li uk-filter-control="filter: [primary-language='Java']; group: primary-language"><a href="#" class="uk-text-emphasis">Java</a></li>
+                                <!-- <li uk-filter-control="filter: [primary-language='Java']; group: primary-language"><a href="#" class="uk-text-emphasis">Java</a></li> -->
                                 <li uk-filter-control="filter: [primary-language='PHP']; group: primary-language"><a href="#" class="uk-text-emphasis">PHP</a></li>
                             </ul>
                         </div>
