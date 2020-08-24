@@ -50,7 +50,7 @@
         <!-- /Mobile Navigation Menu On The Right -->
     </nav>
 
-    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-small-bottom" >
+    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div uk-filter="target: .js-filter">
 
             <!-- Filter and sort selection -->
