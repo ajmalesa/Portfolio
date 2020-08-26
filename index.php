@@ -54,7 +54,7 @@
         <div uk-filter="target: .js-filter">
 
             <!-- Filter and sort selection -->
-            <div class="uk-grid-small uk-flex-middle" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                 <div class="uk-width-expand">
         
                     <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
