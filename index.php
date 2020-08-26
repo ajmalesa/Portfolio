@@ -16,7 +16,7 @@
 </head>
 <body>
 
-    <nav class="uk-background-secondary uk-light uk-navbar">
+    <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">
             <a href="" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
