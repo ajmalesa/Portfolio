@@ -29,3 +29,11 @@ html {
         font-size: 11px;
     } 
 }
+
+.rounded-border {
+    border-radius: 6px;
+}
+
+.about-me {
+    margin-bottom: 25px;
+}

@@ -53,6 +53,10 @@
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div uk-filter="target: .js-filter">
 
+            <div class="about-me">
+                <h1>Projects</h1>
+            </div>
+            
             <!-- Filter and sort selection -->
             <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                 <div class="uk-width-expand">
@@ -60,26 +64,25 @@
                     <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li class="uk-active" uk-filter-control><a href="#" class="uk-text-emphasis">All</a></li>
+                                <li class="uk-active" uk-filter-control><a href="#" class="uk-text-emphasis rounded-border">All</a></li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [project-type='work']; group: project-type"><a href="#" class="uk-text-emphasis">Work</a></li>
-                                <li uk-filter-control="filter: [project-type='personal']; group: project-type"><a href="#" class="uk-text-emphasis">Personal</a></li>
+                                <li uk-filter-control="filter: [project-type='work']; group: project-type"><a href="#" class="uk-text-emphasis rounded-border">Work</a></li>
+                                <li uk-filter-control="filter: [project-type='personal']; group: project-type"><a href="#" class="uk-text-emphasis rounded-border">Personal</a></li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [primary-language='JavaScript']; group: primary-language"><a href="#" class="uk-text-emphasis">JavaScript</a></li>
-                                <!-- <li uk-filter-control="filter: [primary-language='Java']; group: primary-language"><a href="#" class="uk-text-emphasis">Java</a></li> -->
-                                <li uk-filter-control="filter: [primary-language='PHP']; group: primary-language"><a href="#" class="uk-text-emphasis">PHP</a></li>
+                                <li uk-filter-control="filter: [primary-language*='JavaScript']; group: primary-language"><a href="#" class="uk-text-emphasis rounded-border">JavaScript</a></li>
+                                <li uk-filter-control="filter: [primary-language*='PHP']; group: primary-language"><a href="#" class="uk-text-emphasis rounded-border">PHP</a></li>
                             </ul>
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li uk-filter-control="filter: [platform*='mobile']; group: platform"><a href="#" class="uk-text-emphasis">Mobile</a></li>
-                                <li uk-filter-control="filter: [platform*='desktop']; group: platform"><a href="#" class="uk-text-emphasis">Desktop</a></li>
+                                <li uk-filter-control="filter: [platform*='mobile']; group: platform"><a href="#" class="uk-text-emphasis rounded-border">Mobile</a></li>
+                                <li uk-filter-control="filter: [platform*='desktop']; group: platform"><a href="#" class="uk-text-emphasis rounded-border">Desktop</a></li>
                             </ul>
                         </div>
                         <div>
@@ -99,92 +102,11 @@
         
             <!-- Masonry grid of all projects -->
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
-                <!-- Individual project -->
-                <li project-type="personal" primary-language="JavaScript" platform="desktop" data-name="Clicker Web Game" >
-                    <div class="uk-text-center">
-                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                            <img src="img/clicker-website.png" uk-blend-hue alt="">
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle" >
-                                <div>
-                                    <div class="uk-card">
-                                        <div class="uk-card-header">
-                                            <h4 class="uk-card-title" >Clicker Website</h4>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="https://ajmalesa.github.io/Clicker-Website/" class="uk-button uk-button-text project-links" target="_blank" >DEMO</a> |
-                                            <a href="https://github.com/ajmalesa/Clicker-Website" class="uk-button uk-button-text project-links" target="_blank" >CODE</a> |
-                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #clicker-website-details" >DETAILS</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                 
-                    </div>
-                    <!-- Details modal -->
-                    <div id="clicker-website-details" uk-modal>
-                        <div class="uk-modal-dialog">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <h2 class="uk-modal-title">Clicker Website</h2>    
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>Casual clicker game made for the web.</p>
-                            </div>
-                            <div class="uk-modal-footer">
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">HTML</span>
-                                <span class="uk-badge">CSS</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Details modal -->
-                </li>
-                <!-- /Individual project -->
-                <!-- Individual project -->
-                <li project-type="personal" primary-language="Java" platform="mobile" data-name="Clicker Android Game">
-                    <div class="uk-text-center">
-                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
-                            <img src="img/clicker-app.png" alt="">
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
-                                <div>
-                                    <div class="uk-card">
-                                        <div class="uk-card-header">
-                                            <h4 class="uk-card-title">Clicker App</h4>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="https://github.com/ajmalesa/Clicker-Android-App/releases/tag/V1.1.0" class="uk-button uk-button-text project-links" target="_blank">APK</a> |
-                                            <a href="https://github.com/ajmalesa/Clicker-Android-App" class="uk-button uk-button-text project-links" target="_blank">CODE</a> | 
-                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #clicker-app-details" >DETAILS</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>        
-                    </div>  
-                    <!-- Details modal -->
-                    <div id="clicker-app-details" uk-modal>
-                        <div class="uk-modal-dialog">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
-                                <h2 class="uk-modal-title">Clicker App</h2>    
-                            </div>
-                            <div class="uk-modal-body">
-                                <p>More advanced version of web clicker game. Includes graphics, animations and sound effects.</p>
-                            </div>
-                            <div class="uk-modal-footer">
-                                <span class="uk-badge">Java</span>
-                                <span class="uk-badge">XML</span>
-                                <span class="uk-badge">Android Studio</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Details modal -->              
-                </li>
-                <!-- /Individual project -->
+
                 <!-- Individual project -->
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
-                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                        <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <img src="img/tracker-website.png" alt="Screenshot of tracker program">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
@@ -204,15 +126,15 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="tracker-details" uk-modal>
-                        <div class="uk-modal-dialog">
+                        <div class="uk-modal-dialog rounded-border">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
+                            <div class="uk-modal-header rounded-border">
                                 <h2 class="uk-modal-title">Tracker</h2>    
                             </div>
                             <div class="uk-modal-body">
                                 <p>Tracker program with full CRUD functionality.</p>
                             </div>
-                            <div class="uk-modal-footer">
+                            <div class="uk-modal-footer rounded-border">
                                 <span class="uk-badge">PHP</span>
                                 <span class="uk-badge">JavaScript</span>
                                 <span class="uk-badge">CSS</span>
@@ -223,10 +145,11 @@
                     <!-- /Details modal -->               
                 </li>
                 <!-- /Individual project -->
+
                 <!-- Individual project -->
-                <li project-type="work" primary-language="PHP" data-name="Shop" platform="mobile desktop">
+                <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
-                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                        <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <img src="img/shop-marketapts.png" alt="Screenshot of tracker program">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
@@ -245,20 +168,64 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="shop-details" uk-modal>
-                        <div class="uk-modal-dialog">
+                        <div class="uk-modal-dialog rounded-border">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header">
+                            <div class="uk-modal-header rounded-border">
                                 <h2 class="uk-modal-title">Shop MarketApts</h2>    
                             </div>
                             <div class="uk-modal-body">
                                 <p>Shop for downloadable digital content. OpenCart base with PayPal, Google Signin & other integrations.</p>
                             </div>
-                            <div class="uk-modal-footer">
+                            <div class="uk-modal-footer rounded-border">
                                 <span class="uk-badge">E-COMMERCE</span>
                                 <span class="uk-badge">OPENCART</span>
                                 <span class="uk-badge">PHP</span>
                                 <span class="uk-badge">TWIG</span>
                                 <span class="uk-badge">CSS</span>
+                                <span class="uk-badge">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Details modal -->               
+                </li>
+                <!-- /Individual project -->
+
+                <!-- Individual project -->
+                <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
+                            <img src="img/seddit.png" alt="Screenshot of Seddit">
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h4 class="uk-card-title">Seddit</h4>
+                                        </div>
+                                        <div class="uk-card-footer">
+                                            <a href="https://seddit.ajmalesa.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
+                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #seddit-details">DETAILS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>  
+                    <!-- Details modal -->
+                    <div id="seddit-details" uk-modal>
+                        <div class="uk-modal-dialog rounded-border">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-header rounded-border">
+                                <h2 class="uk-modal-title">Seddit</h2>    
+                            </div>
+                            <div class="uk-modal-body">
+                                <p>Reddit clone that I made to familiarize myself with Laravel and MVC.</p>
+                            </div>
+                            <div class="uk-modal-footer rounded-border">
+                                <span class="uk-badge">Laravel</span>
+                                <span class="uk-badge">PHP</span>
+                                <span class="uk-badge">MySQL</span>
+                                <span class="uk-badge">JavaScript</span>
+                                <span class="uk-badge">JQuery</span>
                                 <span class="uk-badge">HTML</span>
                             </div>
                         </div>
