@@ -37,3 +37,7 @@ html {
 .about-me {
     margin-bottom: 25px;
 }
+
+.uk-active > a {
+    color: white!important;
+}
