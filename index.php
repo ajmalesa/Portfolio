@@ -203,6 +203,7 @@
                                         </div>
                                         <div class="uk-card-footer">
                                             <a href="https://seddit.ajmalesa.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
+                                            <a href="https://github.com/ajmalesa/seddit" class="uk-button uk-button-text project-links" target="_blank">CODE</a> |
                                             <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #seddit-details">DETAILS</a>
                                         </div>
                                     </div>
