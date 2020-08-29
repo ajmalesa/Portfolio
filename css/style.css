@@ -1,3 +1,9 @@
+/* Change background color to be a gradient on browsers that support it */
+html {
+    background: rgb(240,63,63);
+background: linear-gradient(0deg, rgba(240,63,63,0.14874141876430202) 0%, rgba(198,91,14,0.15102974828375282) 49%, rgba(255,199,0,0.06407322654462244) 100%);
+}
+
 /* Remove the default border on filter options */
 .uk-grid-divider>:not(.uk-first-column)::before {
     border-left: 1px solid #9fa09f;
@@ -23,7 +29,6 @@ html {
         font-size: 13px;
     }
 }
-
 @media (max-width: 1400px) {
     .project-links {
         font-size: 11px;
@@ -38,6 +43,7 @@ html {
     margin-bottom: 25px;
 }
 
-.uk-active > a {
+/* Make active filter option text color to white to contract blue background */
+.uk-active > .uk-text-emphasis {
     color: white!important;
 }
