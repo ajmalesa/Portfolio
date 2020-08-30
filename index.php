@@ -28,8 +28,9 @@
         <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="/">Projects</a></li>
-                <li class=""><a href="/games">Games</a></li>
+                <li class=""><a href="/games" target="_blank">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
+                <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
             </ul>
         </div>
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
@@ -43,8 +44,10 @@
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                     <li class="uk-active"><a href="/">Projects</a></li>
-                    <li class=""><a href="/games">Games</a></li>
+                    <li class=""><a href="/games" target="_blank">Games</a></li>
                     <!-- <li class=""><a href="#">Contact</a></li> -->
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +91,7 @@
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li ><a href="/games" class="uk-text-emphasis">GAMES</a></li>
+                                <li ><a href="/games" class="uk-text-emphasis" target="_blank">GAMES</a></li>
                             </ul>
                         </div>
                     </div>
