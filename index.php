@@ -116,8 +116,8 @@
                                             <h4 class="uk-card-title">Tracker</h4>
                                         </div>
                                         <div class="uk-card-footer">
-                                            <a href="https://bugcatcher.000webhostapp.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
-                                            <a href="https://github.com/ajmalesa/Tracker" class="uk-button uk-button-text project-links" target="_blank">CODE</a> |
+                                            <a href="https://bugcatcher.000webhostapp.com/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
+                                            <a href="https://github.com/ajmalesa/Tracker" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">CODE</a> |
                                             <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #tracker-details" >DETAILS</a>
                                         </div>
                                     </div>
@@ -159,7 +159,7 @@
                                             <h4 class="uk-card-title">Shop MarketApts</h4>
                                         </div>
                                         <div class="uk-card-footer">
-                                            <a href="https://shop.marketapts.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
+                                            <a href="https://shop.marketapts.com/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
                                             <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #shop-details">DETAILS</a>
                                         </div>
                                     </div>
@@ -203,8 +203,8 @@
                                             <h4 class="uk-card-title">Seddit</h4>
                                         </div>
                                         <div class="uk-card-footer">
-                                            <a href="https://seddit.ajmalesa.com/" class="uk-button uk-button-text project-links" target="_blank">DEMO</a> |
-                                            <a href="https://github.com/ajmalesa/seddit" class="uk-button uk-button-text project-links" target="_blank">CODE</a> |
+                                            <a href="https://seddit.ajmalesa.com/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
+                                            <a href="https://github.com/ajmalesa/seddit" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">CODE</a> |
                                             <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #seddit-details">DETAILS</a>
                                         </div>
                                     </div>
