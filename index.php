@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajmal Esa's web projects. Peruse and contact me if you like what you see.">
     <title>Ajmal Esa</title>
 
     <!-- UIkit CSS -->
@@ -19,7 +20,7 @@
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">
-            <a href="" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
+            <a href="#navbar" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
         </div>
         <!-- /Name display on the left -->
     
