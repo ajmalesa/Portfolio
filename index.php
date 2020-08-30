@@ -194,7 +194,7 @@
                 <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/seddit.png" alt="Screenshot of Seddit">
+                            <img src="img/seddit.PNG" alt="Screenshot of Seddit">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
