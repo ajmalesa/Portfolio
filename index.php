@@ -28,7 +28,8 @@
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
         <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="/">Projects</a></li>
+                <li class="uk-active"><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
+                <li><a href="#skills" uk-scroll id="skills-button">skills</a></li>
                 <li class=""><a href="/games" target="_blank">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
                 <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
@@ -45,7 +46,8 @@
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="/">Projects</a></li>
+                    <li class="uk-active"><a href="#projects">Projects</a></li>
+                    <li class=""><a href="#skills">Skills</a></li>
                     <li class=""><a href="/games" target="_blank">Games</a></li>
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
@@ -60,8 +62,8 @@
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div uk-filter="target: .js-filter">
 
-            <div class="about-me" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                <h1>Projects</h1>
+            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <h2 id="projects" style="padding-top: 40px; margin-top: -40px;">Projects</h2>
             </div>
             
             <!-- Filter and sort selection -->
@@ -244,7 +246,13 @@
             </ul>
             <!-- /Masonry grid of all projects -->
         </div>
+
+        <div class="uk-margin-top	" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <h2 id="skills">Skills</h2>
+        </div>
+        
     </div>
-    
+
+    <script src="js/script.js"></script>
 </body>
 </html>
