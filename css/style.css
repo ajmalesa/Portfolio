@@ -3,7 +3,7 @@ html {
     background: rgb(240,63,63);
     background: linear-gradient(0deg, rgba(240,63,63,0.14874141876430202) 0%, rgba(198,91,14,0.15102974828375282) 49%, rgba(255,199,0,0.06407322654462244) 100%);
 }
-@media (max-height: 699px) {
+@media (max-height: 699px), (max-width: 500px) {
     html {
         background: rgb(240,63,63);
         background: radial-gradient(circle, rgba(240,63,63,0.14874141876430202) 0%, rgba(198,91,14,0.15102974828375282) 49%, rgba(255,199,0,0.06407322654462244) 100%)!important;
@@ -43,10 +43,6 @@ html {
 
 .rounded-border {
     border-radius: 6px;
-}
-
-.about-me {
-    margin-bottom: 25px;
 }
 
 /* Make active filter option text color to white to contract blue background */
