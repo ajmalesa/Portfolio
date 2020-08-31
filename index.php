@@ -46,8 +46,8 @@
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#projects">Projects</a></li>
-                    <li class=""><a href="#skills">Skills</a></li>
+                    <li class="uk-active"><a href="#projects" id="projects-button-mobile">Projects</a></li>
+                    <li class=""><a href="#skills" id="skills-button-mobile">Skills</a></li>
                     <li class=""><a href="/games" target="_blank">Games</a></li>
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
@@ -247,8 +247,143 @@
             <!-- /Masonry grid of all projects -->
         </div>
 
-        <div class="uk-margin-top	" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
             <h2 id="skills">Skills</h2>
+        </div>
+
+        
+        <div uk-grid>
+            <div class="uk-width-1-4@m uk-width-1-3@s">
+                <ul uk-accordion="multiple: true">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Backend</a>
+                        <div class="uk-accordion-content">
+                            <ul uk-accordion="multiple: true">
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Language</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">PHP</span>
+                                            <span class="uk-badge">.NET</span>
+                                            <span class="uk-badge">Python</span>
+                                            <span class="uk-badge">Java</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Database</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">RDBMS</span>
+                                            <span class="uk-badge">MySQL</span>
+                                            <span class="uk-badge">MSSQL</span>
+                                            <span class="uk-badge">Eloquent</span>
+                                            <span class="uk-badge">Migrating</span>
+                                            <span class="uk-badge">Installation</span>
+                                            <span class="uk-badge">Maintenance</span>
+                                            <span class="uk-badge">Joins</span>
+                                            <span class="uk-badge">Normalization</span>
+                                            <span class="uk-badge">Keys</span>
+                                            <span class="uk-badge">Encryption</span>
+                                            <span class="uk-badge">Stored Procedures</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-4@m uk-width-1-3@s">
+                <ul uk-accordion="multiple: true">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Frontend</a>
+                        <div class="uk-accordion-content">
+                            <ul uk-accordion="multiple: true">
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Language</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">HTML5</span>
+                                            <span class="uk-badge">CSS3</span>
+                                            <span class="uk-badge">JavaScript</span>
+                                            <span class="uk-badge">JQuery</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Design</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">PSD to HTML</span>
+                                            <span class="uk-badge">GIMP</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-4@m uk-width-1-3@s">
+                <ul uk-accordion="multiple: true">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Application</a>
+                        <div class="uk-accordion-content">
+                            <ul uk-accordion="multiple: true">
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Desktop</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">C#</span>
+                                            <span class="uk-badge">Java</span>
+                                            <span class="uk-badge">C++</span>
+                                            <span class="uk-badge">Python</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Mobile</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">Kotlin</span>
+                                            <span class="uk-badge">Java</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="uk-width-1-4@m uk-width-1-3@s">
+                <ul uk-accordion="multiple: true">
+                    <li>
+                        <a class="uk-accordion-title" href="#">Miscellaneous</a>
+                        <div class="uk-accordion-content">
+                            <ul uk-accordion="multiple: true">
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Script</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">Bash</span>
+                                            <span class="uk-badge">Batch</span>
+                                            <span class="uk-badge">PowerShell</span>
+                                            <span class="uk-badge">AutoHotKey</span>
+                                            <span class="uk-badge">Desktop Automation</span>
+                                            <span class="uk-badge">CLI Automation</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">Framework</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">Laravel</span>
+                                            <span class="uk-badge">Django</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         
     </div>

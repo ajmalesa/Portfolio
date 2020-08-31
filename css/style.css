@@ -56,3 +56,12 @@ so we scroll to the correct location taking the navbar into account */
     padding-top: 80px; 
     margin-top: -80px;
 }
+
+.second-level-accordion {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.second-level-content {
+    margin-left: 10px;
+}
