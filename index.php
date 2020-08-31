@@ -25,7 +25,7 @@
         </div>
         <!-- /Name display on the left -->
     
-        <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
+        <!-- Navigation Menu For Screens With A Width Larger Than 960px -->
         <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
@@ -60,7 +60,19 @@
     </nav>
 
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
-        <div uk-filter="target: .js-filter">
+        <div class="uk-margin-large-top uk-width-1-2@l">
+            <h2 id="about" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">About</h2>
+            <p>
+                <span class="fade-first-sentence">I am a web developer with passion for all things tech.</span> 
+                <span class="fade-second-sentence">It started with writing scripts to impress friends & family in high school.</span>
+                <span class="fade-third-sentence">Now it has evolved into my livelihood.</span> 
+                <span class="fade-third-sentence">The curiousity for learning more has not waned.</span>
+            </p>
+        </div>
+
+        <hr class="darker-hr">
+
+        <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
 
             <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                 <h2 id="projects" class="anchor-links" style="padding-top: 80px; margin-top: -80px;">Projects</h2>
@@ -247,12 +259,14 @@
             <!-- /Masonry grid of all projects -->
         </div>
 
-        <div class="uk-margin-large-top" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+        <hr class="darker-hr">
+
+        <!-- Skills section -->
+        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
             <h2 id="skills">Skills</h2>
         </div>
 
-        
-        <div uk-grid>
+        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
             <div class="uk-width-1-4@m uk-width-1-3@s">
                 <ul uk-accordion="multiple: true">
                     <li>
@@ -385,7 +399,16 @@
                 </ul>
             </div>
         </div>
+        <!-- /Skills section -->
+
+        <hr class="darker-hr">
         
+        <!-- Contact section -->
+        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+            <h3 class="uk-margin-large-top">Like what you see? <a href="mailto: ajmalesa@gmail.com">Shoot me a message.</a></h3>
+        </div>
+        <!-- /Contact section -->
+
     </div>
 
     <script src="js/script.js"></script>

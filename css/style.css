@@ -2,6 +2,7 @@
 html {
     background: rgb(240,63,63);
     background: linear-gradient(0deg, rgba(240,63,63,0.14874141876430202) 0%, rgba(198,91,14,0.15102974828375282) 49%, rgba(255,199,0,0.06407322654462244) 100%);
+    background-attachment: fixed;
 }
 @media (max-height: 699px), (max-width: 500px) {
     html {
@@ -64,4 +65,8 @@ so we scroll to the correct location taking the navbar into account */
 
 .second-level-content {
     margin-left: 10px;
+}
+
+.darker-hr {
+    border-top: 1px solid #9fa09f;
 }
