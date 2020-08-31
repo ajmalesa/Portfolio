@@ -63,7 +63,7 @@
         <div uk-filter="target: .js-filter">
 
             <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                <h2 id="projects" style="padding-top: 40px; margin-top: -40px;">Projects</h2>
+                <h2 id="projects" class="anchor-links" style="padding-top: 80px; margin-top: -80px;">Projects</h2>
             </div>
             
             <!-- Filter and sort selection -->

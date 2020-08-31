@@ -49,3 +49,10 @@ html {
 .uk-active > .uk-text-emphasis {
     color: white!important;
 }
+
+/* Add padding to top of anchors and then offset the same amount with margin-top
+so we scroll to the correct location taking the navbar into account */
+.anchor-links {
+    padding-top: 80px; 
+    margin-top: -80px;
+}
