@@ -252,7 +252,7 @@
         </div>
 
         
-        <div uk-grid class="uk-margin-medium-bottom">
+        <div uk-grid>
             <div class="uk-width-1-4@m uk-width-1-3@s">
                 <ul uk-accordion="multiple: true">
                     <li>
