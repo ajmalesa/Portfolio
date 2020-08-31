@@ -31,6 +31,7 @@
                 <li class=""><a href="/games" target="_blank">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
                 <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
+                <li><a href="mailto:ajmalesa@gmail.com" uk-icon="mail"></a></li>
             </ul>
         </div>
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
@@ -48,6 +49,7 @@
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
                     <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
+                    <li><a href="mailto: ajmalesa@gmail.com" uk-icon="mail"></a></li>
                 </ul>
             </div>
         </div>
@@ -57,7 +59,7 @@
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div uk-filter="target: .js-filter">
 
-            <div class="about-me">
+            <div class="about-me" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
                 <h1>Projects</h1>
             </div>
             
