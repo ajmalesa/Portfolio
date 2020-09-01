@@ -70,3 +70,38 @@ so we scroll to the correct location taking the navbar into account */
 .darker-hr {
     border-top: 1px solid #9fa09f;
 }
+
+/* Fade sentences in  */
+.fade-first-sentence {
+    -webkit-animation: fade-in 1s forwards;
+    animation: fade-in 1s forwards;
+    animation-delay: .2s;
+    opacity: 0;
+}
+.fade-second-sentence {
+    -webkit-animation: fade-in 1s forwards;
+    animation: fade-in 1s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+.fade-third-sentence {
+    -webkit-animation: fade-in 1s forwards;
+    animation: fade-in 1s forwards;
+    animation-delay: 4.5s;
+    opacity: 0;
+}
+.fade-fourth-sentence {
+    -webkit-animation: fade-in 1s forwards;
+    animation: fade-in 1s forwards;
+    animation-delay: 6.5s;
+    opacity: 0;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End fade table in  */

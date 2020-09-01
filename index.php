@@ -28,8 +28,9 @@
         <!-- Navigation Menu For Screens With A Width Larger Than 960px -->
         <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
-                <li><a href="#skills" uk-scroll id="skills-button">skills</a></li>
+                <li class="uk-active"><a href="#about" uk-scroll id="about-button">About</a></li>
+                <li><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
+                <li><a href="#skills" uk-scroll id="skills-button">Skills</a></li>
                 <li class=""><a href="/games" target="_blank">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
                 <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
@@ -46,9 +47,10 @@
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
             <div class="uk-offcanvas-bar uk-flex uk-flex-column">
                 <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                    <li class="uk-active"><a href="#projects" id="projects-button-mobile">Projects</a></li>
-                    <li class=""><a href="#skills" id="skills-button-mobile">Skills</a></li>
-                    <li class=""><a href="/games" target="_blank">Games</a></li>
+                    <li class="uk-active"><a href="#about" id="about-button-mobile">About</a></li>
+                    <li><a href="#projects" id="projects-button-mobile">Projects</a></li>
+                    <li><a href="#skills" id="skills-button-mobile">Skills</a></li>
+                    <li><a href="/games" target="_blank">Games</a></li>
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
                     <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
@@ -60,26 +62,37 @@
     </nav>
 
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
-        <div class="uk-margin-large-top uk-width-1-2@l">
-            <h2 id="about" uk-scrollspy="cls: uk-animation-slide-top-medium; repeat: true">About</h2>
-            <p>
-                <span class="fade-first-sentence">I am a web developer with passion for all things tech.</span> 
-                <span class="fade-second-sentence">It started with writing scripts to impress friends & family in high school.</span>
-                <span class="fade-third-sentence">Now it has evolved into my livelihood.</span> 
-                <span class="fade-third-sentence">The curiousity for learning more has not waned.</span>
-            </p>
+        <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
+
+            <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: true">
+                <h2 id="about" class="anchor-links">About</h2>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-2@l">
+                    <p>
+                        <span class="fade-first-sentence">I am a web developer with a passion for all things tech.</span> 
+                        <span class="fade-second-sentence">It started with writing scripts to impress friends & family in high school.</span>
+                        <span class="fade-third-sentence">Now it has evolved into my livelihood.</span> 
+                        <span class="fade-fourth-sentence">That passion has remained evermore.</span>
+                    </p>
+                </div>
+                <div class="uk-width-1-2@l">
+                    
+                </div>
+            </div>
+
         </div>
 
         <hr class="darker-hr">
 
         <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
 
-            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-                <h2 id="projects" class="anchor-links" style="padding-top: 80px; margin-top: -80px;">Projects</h2>
+            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+                <h2 id="projects" class="anchor-links">Projects</h2>
             </div>
             
             <!-- Filter and sort selection -->
-            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
                 <div class="uk-width-expand">
         
                     <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
@@ -122,7 +135,7 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
 
                 <!-- Individual project -->
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
@@ -262,17 +275,24 @@
         <hr class="darker-hr">
 
         <!-- Skills section -->
-        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
-            <h2 id="skills">Skills</h2>
+        <div uk-grid>
+            <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+                <h2 id="skills">Skills</h2> 
+    
+                <ul class="uk-subnav uk-subnav-pill" uk-margin="">
+                    <li class="uk-active" ><a id="show-all-button" href="#" class="uk-text-emphasis rounded-border">Show All</a></li>
+                    <li class="uk-active" ><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
             <div class="uk-width-1-4@m uk-width-1-3@s">
-                <ul uk-accordion="multiple: true">
+                <ul class="accordion" uk-accordion="multiple: true">
                     <li>
                         <a class="uk-accordion-title" href="#">Backend</a>
                         <div class="uk-accordion-content">
-                            <ul uk-accordion="multiple: true">
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Language</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -283,6 +303,8 @@
                                         </div>
                                     </a>
                                 </li>
+                            </ul>
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Database</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -308,11 +330,11 @@
             </div>
 
             <div class="uk-width-1-4@m uk-width-1-3@s">
-                <ul uk-accordion="multiple: true">
+                <ul class="accordion" uk-accordion="multiple: true">
                     <li>
                         <a class="uk-accordion-title" href="#">Frontend</a>
                         <div class="uk-accordion-content">
-                            <ul uk-accordion="multiple: true">
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Language</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -323,6 +345,8 @@
                                         </div>
                                     </a>
                                 </li>
+                            </ul>
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Design</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -338,11 +362,11 @@
             </div>
 
             <div class="uk-width-1-4@m uk-width-1-3@s">
-                <ul uk-accordion="multiple: true">
+                <ul class="accordion" uk-accordion="multiple: true">
                     <li>
                         <a class="uk-accordion-title" href="#">Application</a>
                         <div class="uk-accordion-content">
-                            <ul uk-accordion="multiple: true">
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Desktop</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -353,6 +377,8 @@
                                         </div>
                                     </a>
                                 </li>
+                            </ul>
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Mobile</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -368,11 +394,11 @@
             </div>
 
             <div class="uk-width-1-4@m uk-width-1-3@s">
-                <ul uk-accordion="multiple: true">
+                <ul class="accordion" uk-accordion="multiple: true">
                     <li>
                         <a class="uk-accordion-title" href="#">Miscellaneous</a>
                         <div class="uk-accordion-content">
-                            <ul uk-accordion="multiple: true">
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Script</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -385,6 +411,8 @@
                                         </div>
                                     </a>
                                 </li>
+                            </ul>
+                            <ul class="accordion" uk-accordion="multiple: true">
                                 <li>
                                     <a class="uk-accordion-title second-level-accordion" href="#">Framework</a>
                                         <div class="uk-accordion-content second-level-content">
@@ -404,7 +432,7 @@
         <hr class="darker-hr">
         
         <!-- Contact section -->
-        <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true">
+        <div uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
             <h3 class="uk-margin-large-top">Like what you see? <a href="mailto: ajmalesa@gmail.com">Shoot me a message.</a></h3>
         </div>
         <!-- /Contact section -->
