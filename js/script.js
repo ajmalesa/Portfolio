@@ -4,6 +4,7 @@ let latestCommitMessage;
 let latestCommitTime;
 let latestCommitLink;
 let latestCommitProject;
+let lastEvent;
 
 // Send GET request to events endpoint of GitHub API
 xhttp.open("GET", "https://api.github.com/users/ajmalesa/events", true);
@@ -12,9 +13,7 @@ xhttp.send();
 // Run this when readystate of the request changes
 xhttp.onreadystatechange = (e) => {
     // Grab the last event
-    let lastEvent = JSON.parse(xhttp.responseText)[0];
-
-    console.log(lastEvent);
+    lastEvent = JSON.parse(xhttp.responseText)[0];
 
     // If the last event was a push, run this
     if (lastEvent.type === "PushEvent") {
@@ -26,20 +25,17 @@ xhttp.onreadystatechange = (e) => {
 
         // Make a link variable to repo by prepending github domain to repo name
         latestCommitLink = "https://github.com/" + latestCommitLink;
+
+        // Update text to show latest commit details
+        document.querySelector("#latest-commit-display").innerHTML = "Latest commit";
+        document.querySelector("#latest-commit-project").innerHTML = latestCommitProject;
+        document.querySelector("#latest-commit-message").innerHTML = latestCommitMessage;
+        document.querySelector("#latest-commit-time").innerHTML = latestCommitTime.toLocaleString();
+
+        // Update link to URL created above
+        document.querySelector("#latest-commit-link").href = latestCommitLink;
     }
 }
-
-xhttp.onload = (e) => {
-    // Update text to show latest commit details
-    document.querySelector("#latest-commit-display").innerHTML = "Latest commit";
-    document.querySelector("#latest-commit-project").innerHTML = latestCommitProject;
-    document.querySelector("#latest-commit-message").innerHTML = latestCommitMessage;
-    document.querySelector("#latest-commit-time").innerHTML = latestCommitTime.toLocaleString();
-
-    // Update link to URL created above
-    document.querySelector("#latest-commit-link").href = latestCommitLink;
-}
-
 
 // Add active class on selected section and remove active class on all other desktop nav menu items 
 document.getElementById('skills-button').addEventListener('click', function() {
