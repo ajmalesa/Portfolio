@@ -13,7 +13,11 @@ xhttp.send();
 // Run this when readystate of the request changes
 xhttp.onreadystatechange = (e) => {
     // Grab the last event
-    lastEvent = JSON.parse(xhttp.responseText)[0];
+    try {
+        lastEvent = JSON.parse(xhttp.responseText)[0];
+    } catch {
+        
+    }
 
     // If the last event was a push, run this
     if (lastEvent.type === "PushEvent") {
