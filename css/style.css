@@ -105,3 +105,10 @@ so we scroll to the correct location taking the navbar into account */
     }
 }
 /* End fade table in  */
+
+
+@media (max-width: 1199px) {
+    .commit-details {
+        margin-top: 30px;
+    }
+}
