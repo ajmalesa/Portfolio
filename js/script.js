@@ -16,11 +16,15 @@ xhttp.onreadystatechange = (e) => {
     try {
         lastEvent = JSON.parse(xhttp.responseText)[0];
     } catch {
-        
+
     }
 
     // If the last event was a push, run this
     if (lastEvent.type === "PushEvent") {
+        // Only add commit details class to commit section if there was a push
+        // event. Commit detials class will add margin to the top on mobile
+        document.querySelector("#commit-section").classList.add("commit-details");
+
         // Grab the latest commit details
         latestCommitLink = lastEvent.repo.name;
         latestCommitMessage = lastEvent.payload.commits[0].message;
