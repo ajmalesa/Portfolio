@@ -76,8 +76,13 @@
                         <span class="fade-fourth-sentence">That passion has remained evermore.</span>
                     </p>
                 </div>
-                <div class="uk-width-1-2@l">
-                    
+                <div class="uk-width-1-2@l commit-details">
+                    <span id="latest-commit-display"></span>
+                    <a href="#" target="_blank" id="latest-commit-link">    
+                        <div id="latest-commit-project"></div>
+                        <div id="latest-commit-message"></div>
+                        <div id="latest-commit-time"></div>
+                    </a>
                 </div>
             </div>
 
