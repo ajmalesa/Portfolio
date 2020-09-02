@@ -62,7 +62,7 @@
     </nav>
 
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
-        <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
+        <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
 
             <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: true">
                 <h2 id="about" class="anchor-links">About</h2>
@@ -275,8 +275,8 @@
         <hr class="darker-hr">
 
         <!-- Skills section -->
-        <div uk-grid>
-            <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+        <div class="uk-margin-medium-top" uk-grid>
+            <div uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
                 <h2 id="skills">Skills</h2> 
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
@@ -432,8 +432,8 @@
         <hr class="darker-hr">
         
         <!-- Contact section -->
-        <div uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
-            <h3 class="uk-margin-large-top">Like what you see? <a href="mailto: ajmalesa@gmail.com">Shoot me a message.</a></h3>
+        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
+            <h4>Like what you see? <a href="mailto: ajmalesa@gmail.com">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
 
