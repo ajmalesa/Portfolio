@@ -34,7 +34,7 @@
                 <li class=""><a href="/games" target="_blank">Games</a></li>
                 <!-- <li class=""><a href="#">Contact</a></li> -->
                 <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
-                <li><a href="mailto:ajmalesa@gmail.com" uk-icon="mail"></a></li>
+                <li><a href="#" uk-icon="mail" uk-toggle="target: #contact-modal"></a></li>
             </ul>
         </div>
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
@@ -54,12 +54,43 @@
                     <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
                     <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
-                    <li><a href="mailto: ajmalesa@gmail.com" uk-icon="mail"></a></li>
+                    <li><a href="#" uk-icon="mail" uk-toggle="target: #contact-modal"></a></li>
                 </ul>
             </div>
         </div>
         <!-- /Mobile Navigation Menu On The Right -->
     </nav>
+
+    <!-- Contact form modal -->
+    <div id="contact-modal" uk-modal>
+        <div class="uk-modal-dialog rounded-border">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-modal-header rounded-border">
+                <h2 class="uk-modal-title">Contact</h2>    
+            </div>
+            <div class="uk-modal-body">
+                <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
+                    <div class="uk-width-1-1">
+                        <div class="uk-inline uk-width-1-1">
+                            <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Your email*">
+                        </div>
+                    </div>
+
+                    <div class="uk-width-1-1">
+                        <div class="uk-inline uk-width-1-1">
+                            <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Your message*"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="uk-margin" uk-margin>
+                        <button type="button" id="send-message-button" class="uk-button uk-button-default" disabled>Send message</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /Contact form modal -->
 
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
@@ -438,7 +469,7 @@
         
         <!-- Contact section -->
         <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
-            <h4>Like what you see? <a href="mailto: ajmalesa@gmail.com">Send me a happy, electronic missive.</a></h4>
+            <h4>Like what you see? <a href="#">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
 
