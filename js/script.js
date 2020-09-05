@@ -92,6 +92,7 @@ document.getElementById('show-all-button').addEventListener('click', function() 
         }
     );
 });
+
 // Collapse all skills when hide all button is clicked
 document.getElementById('hide-all-button').addEventListener('click', function() {
     // Go through each element that has a class of accordion
@@ -114,3 +115,34 @@ document.getElementById("hide-all-button").addEventListener("click", function(ev
     event.preventDefault()
 });
 
+// Validate contact form
+function validateContactForm() {
+    if (
+        document.querySelector("#contact-email").value.length > 0 && 
+        document.querySelector("#contact-message").value.length > 0
+    )
+    {
+        try {
+            document.querySelector("#send-message-button").attributes.removeNamedItem("disabled");
+        }
+        catch {
+
+        }
+    } 
+    else  
+    {
+        document.querySelector("#send-message-button").setAttribute('disabled', 'true');
+    }
+}
+
+
+// Send message using AJAX when send message button is clicked 
+document.querySelector("#send-message-button").addEventListener("click", function() { 
+
+    const form = new FormData(document.getElementById('contact-form'));
+    fetch('/functions/contact-request.php', {
+        method: 'POST',
+        body: form
+    });
+    
+});
