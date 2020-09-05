@@ -11,7 +11,7 @@ xhttp.open("GET", "https://api.github.com/users/ajmalesa/events", true);
 xhttp.send();
 
 // Run this when readystate of the request changes
-xhttp.onreadystatechange = (e) => {
+xhttp.onload = (e) => {
     // Grab the last event
     try {
         lastEvent = JSON.parse(xhttp.responseText)[0];
