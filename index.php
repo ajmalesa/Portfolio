@@ -390,6 +390,16 @@
                                     </a>
                                 </li>
                             </ul>
+                            <ul class="accordion" uk-accordion="multiple: true">
+                                <li>
+                                    <a class="uk-accordion-title second-level-accordion" href="#">CSS Frameworks</a>
+                                        <div class="uk-accordion-content second-level-content">
+                                            <span class="uk-badge">Bootstrap</span>
+                                            <span class="uk-badge">UIkit</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                 </ul>
