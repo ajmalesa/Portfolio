@@ -3,6 +3,6 @@
     $contactEmail = $_POST["contact-email"];
     $contactMessage = $_POST["contact-message"];
 
-    mail($contactEmail, "Contact", $contactMessage);
+    mail("ajmalesa@gmail.com", "Contact", $contactMessage . "<br /> sender's email: " . $contactMessage);
 
 ?>
