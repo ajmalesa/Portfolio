@@ -32,7 +32,6 @@
                 <li><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
                 <li><a href="#skills" uk-scroll id="skills-button">Skills</a></li>
                 <li class=""><a href="/games" target="_blank">Games</a></li>
-                <!-- <li class=""><a href="#">Contact</a></li> -->
                 <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
                 <li><a href="#" uk-icon="mail" uk-toggle="target: #contact-modal"></a></li>
             </ul>
@@ -51,7 +50,6 @@
                     <li><a href="#projects" id="projects-button-mobile">Projects</a></li>
                     <li><a href="#skills" id="skills-button-mobile">Skills</a></li>
                     <li><a href="/games" target="_blank">Games</a></li>
-                    <!-- <li class=""><a href="#">Contact</a></li> -->
                     <li class="uk-nav-divider"></li>
                     <li><a href="https://www.github.com/ajmalesa" rel="noreferrer" target="_blank" uk-icon="github"></a></li>
                     <li><a href="#" uk-icon="mail" uk-toggle="target: #contact-modal"></a></li>
@@ -469,7 +467,7 @@
         
         <!-- Contact section -->
         <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
-            <h4>Like what you see? <a href="#">Send me a happy, electronic missive.</a></h4>
+            <h4>Like what you see? <a href="#" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
 
