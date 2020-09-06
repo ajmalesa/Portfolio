@@ -106,12 +106,14 @@
                     </p>
                 </div>
                 <div id="commit-section" class="uk-width-1-2@l">
-                    <span id="latest-commit-display"></span>
-                    <a href="#" target="_blank" id="latest-commit-link">    
-                        <div id="latest-commit-project" class="uk-text-capitalize"></div>
-                        <div id="latest-commit-message"></div>
-                        <div id="latest-commit-time"></div>
-                    </a>
+                    <div uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                        <span id="latest-commit-display"></span>
+                        <a href="#" target="_blank" id="latest-commit-link">    
+                            <div id="latest-commit-project" class="uk-text-capitalize"></div>
+                            <div id="latest-commit-message"></div>
+                            <div id="latest-commit-time"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
