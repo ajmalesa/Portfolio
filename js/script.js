@@ -135,7 +135,6 @@ function validateContactForm() {
     }
 }
 
-
 // Send message using AJAX when send message button is clicked 
 document.querySelector("#send-message-button").addEventListener("click", function() { 
 
@@ -146,3 +145,29 @@ document.querySelector("#send-message-button").addEventListener("click", functio
     });
     
 });
+
+// Generate random number in range helper method
+function randomNumberInRange(min, max) {  
+    return Math.round(Math.random() * (max - min) + min); 
+}  
+
+// Use normal color as fallback when browser does not support gradient
+document.querySelector("html").style.background = "rgb(240,63,63)";
+
+// With the help of the above, aptly-categorized helper method to generate 
+// random background radiant color
+document.querySelector("html").style.background = `
+    linear-gradient(
+        0deg, 
+        rgb(` + randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` / 15%) 0%,
+        rgb(` + randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` / 15%) 49%,
+        rgb(` + randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` ` + 
+                randomNumberInRange(0, 255) + ` / 6%) 100%
+        )
+    `;
+document.querySelector("html").style.backgroundAttachment = "fixed";
