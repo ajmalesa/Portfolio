@@ -144,6 +144,8 @@ document.querySelector("#send-message-button").addEventListener("click", functio
         body: form
     });
 
+
+    document.querySelector("#contact-message").value = "";
     UIkit.modal(document.querySelector("#contact-modal")).hide();
     
 });
