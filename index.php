@@ -333,9 +333,9 @@
                                     <a class="uk-accordion-title second-level-accordion" href="#">Language</a>
                                         <div class="uk-accordion-content second-level-content">
                                             <span class="uk-badge">PHP</span>
-                                            <span class="uk-badge">.NET</span>
                                             <span class="uk-badge">Python</span>
                                             <span class="uk-badge">Java</span>
+                                            <span class="uk-badge">ASP.NET</span>
                                         </div>
                                     </a>
                                 </li>
