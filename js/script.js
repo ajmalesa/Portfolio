@@ -138,15 +138,27 @@ function validateContactForm() {
 // Send message using AJAX when send message button is clicked 
 document.querySelector("#send-message-button").addEventListener("click", function() { 
 
+    document.querySelector("#send-message-button").setAttribute("disabled", "true");
+
     const form = new FormData(document.getElementById('contact-form'));
     fetch('/functions/contact-request.php', {
         method: 'POST',
         body: form
     });
 
-
+    // Erase message value after in case they click send message again
     document.querySelector("#contact-message").value = "";
-    UIkit.modal(document.querySelector("#contact-modal")).hide();
+
+    // Change send message button to show user feedback that their message was sent
+    document.querySelector("#send-message-button").innerHTML = "MESSAGE SENT &#x2713;";
+    document.querySelector("#send-message-button").style.color = "dodgerblue";
+
+    // Hide contact modal after set interval
+    setTimeout(function() {
+        UIkit.modal(document.querySelector("#contact-modal")).hide();
+        document.querySelector("#send-message-button").style.color = "black";
+        document.querySelector("#send-message-button").innerHTML = "SEND MESSAGE";
+    }, 1500);
     
 });
 
