@@ -146,7 +146,7 @@
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/tracker-website.png" alt="Screenshot of tracker program">
+                            <img src="img/tracker-website.webp" alt="Screenshot of tracker program">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -189,7 +189,7 @@
                 <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/shop-marketapts.png" alt="Screenshot of tracker program">
+                            <img src="img/shop-marketapts.webp" alt="Screenshot of tracker program">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -233,7 +233,7 @@
                 <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/seddit.PNG" alt="Screenshot of Seddit">
+                            <img src="img/seddit.webp" alt="Screenshot of Seddit">
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
