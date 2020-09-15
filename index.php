@@ -149,7 +149,7 @@
                             <picture>
                                 <source srcset="img/tracker-website.webp" type="image/webp">
                                 <source srcset="img/tracker-website.png" type="image/jpeg"> 
-                                <img src="img/tracker-website.png" alt="Alt Text!">
+                                <img src="img/tracker-website.png" alt="Screenshot of tracker program">
                             </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
@@ -193,7 +193,11 @@
                 <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/shop-marketapts.webp" alt="Screenshot of tracker program">
+                            <picture>
+                                <source srcset="img/shop-marketapts.webp" type="image/webp">
+                                <source srcset="img/shop-marketapts.png" type="image/jpeg"> 
+                                <img src="img/shop-marketapts.png" alt="Screenshot of Shop MarketApts">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -237,7 +241,11 @@
                 <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/seddit.webp" alt="Screenshot of Seddit">
+                            <picture>
+                                <source srcset="img/seddit.webp" type="image/webp">
+                                <source srcset="img/seddit.png" type="image/jpeg"> 
+                                <img src="img/seddit.png" alt="Screenshot of Seddit">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
