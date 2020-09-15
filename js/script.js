@@ -162,7 +162,7 @@ document.querySelector("#send-message-button").addEventListener("click", functio
     
 });
 
-// Generate random number in range helper method
+/** Generate random number in range */
 function randomNumberInRange(min, max) {  
     return Math.round(Math.random() * (max - min) + min); 
 }  
@@ -170,20 +170,43 @@ function randomNumberInRange(min, max) {
 // Use normal color as fallback when browser does not support gradient
 document.querySelector("html").style.background = "rgb(240,63,63)";
 
-// With the help of the above, aptly-categorized helper method to generate 
-// random background radiant color
+// Use same random number for color that will be at the top of the page
+// so we can match it with the navbar colors
+let topOfPageColorRed   = randomNumberInRange(0, 40);
+let topOfPageColorGreen = randomNumberInRange(0, 40);
+let topOfPageColorBlue  = randomNumberInRange(0, 40);
+  
+// generate random background radiant color
 document.querySelector("html").style.background = `
     linear-gradient(
         0deg, 
-        rgb(` + randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` / 15%) 0%,
-        rgb(` + randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` / 15%) 49%,
-        rgb(` + randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` ` + 
-                randomNumberInRange(0, 255) + ` / 6%) 100%
+        rgb(${randomNumberInRange(0, 255)}  
+            ${randomNumberInRange(0, 255)}
+            ${randomNumberInRange(0, 255)} / 15%) 0%,
+        rgb(${randomNumberInRange(0, 255)}  
+            ${randomNumberInRange(0, 255)}
+            ${randomNumberInRange(0, 255)} / 15%) 49%,
+        rgb(${topOfPageColorRed} 
+            ${topOfPageColorGreen}
+            ${topOfPageColorBlue} / 6%) 100%
         )
     `;
 document.querySelector("html").style.backgroundAttachment = "fixed";
+
+// use random solid color for mobile and desktop navbar
+document.querySelectorAll(".uk-navbar")[0].style.background = `
+    rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .92)
+`;
+document.querySelectorAll(".uk-offcanvas-bar")[0].style.background = `
+    rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .99)
+`;
+
+// Apply randomly generated colors to box shadows of projects as well
+let ukInlineClips = document.querySelectorAll(".uk-inline-clip");
+ukInlineClips.forEach(function(ukInlineClip) {
+    ukInlineClip.style.boxShadow = `5px 5px 6px 3px 
+        rgb(${topOfPageColorRed} 
+            ${topOfPageColorGreen}
+            ${topOfPageColorBlue} / 38%`;
+});
+
