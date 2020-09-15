@@ -146,7 +146,11 @@
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/tracker-website.webp" alt="Screenshot of tracker program">
+                            <picture>
+                                <source srcset="img/tracker-website.webp" type="image/webp">
+                                <source srcset="img/tracker-website.png" type="image/jpeg"> 
+                                <img src="img/tracker-website.png" alt="Alt Text!">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -463,13 +467,13 @@
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Your email*">
+                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Email*">
                             </div>
                         </div>
 
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Your message*"></textarea>
+                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Message*"></textarea>
                             </div>
                         </div>
 
