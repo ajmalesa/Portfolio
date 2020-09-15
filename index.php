@@ -40,7 +40,7 @@
 
         <!-- Mobile Navigation Menu On The Right -->
         <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
-            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#"></a>
+            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" aria-label="Toggle Mobile Navbar"></a>
         </div>
 
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
