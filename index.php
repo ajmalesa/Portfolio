@@ -77,7 +77,7 @@
                 <div id="commit-section" class="uk-width-1-2@l">
                     <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-right; repeat: true">
                         <span id="latest-commit-display"></span>
-                        <a href="#" target="_blank" id="latest-commit-link">    
+                        <a href="#" target="_blank" id="latest-commit-link" rel="noreferrer">    
                             <div id="latest-commit-project" class="uk-text-capitalize"></div>
                             <div id="latest-commit-message"></div>
                             <div id="latest-commit-time"></div>
