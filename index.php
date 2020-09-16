@@ -18,6 +18,30 @@
 </head>
 <body>
 
+    <!-- Style tag that will be used to dynamically style scrollbar -->
+    <style id="scrollbar-style">
+        .scrollbar
+        {
+            margin-left: 30px;
+            float: left;
+            height: 300px;
+            width: 65px;
+            background: #F5F5F5;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+        }
+        body::-webkit-scrollbar {
+            width: 15px;    
+        }
+        body {
+            scrollbar-width: 30px;
+            scrollbar-color: #90A4AE #CFD8DC;
+        }
+
+
+    </style>
+    <!-- /Style tag that will be used to dynamically style scrollbar -->
+
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">

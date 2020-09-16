@@ -170,19 +170,21 @@ function randomNumberInRange(min, max) {
 // Use normal color as fallback when browser does not support gradient
 document.querySelector("html").style.background = "rgb(240,63,63)";
 
-// Use same random number for color that will be at the top of the page
-// so we can match it with the navbar colors
+// Use same random number for color so we can match it with other page colors
 let topOfPageColorRed   = randomNumberInRange(0, 40);
 let topOfPageColorGreen = randomNumberInRange(0, 40);
 let topOfPageColorBlue  = randomNumberInRange(0, 40);
+let bottomOfPageColorRed   = randomNumberInRange(0, 255);
+let bottomOfPageColorGreen = randomNumberInRange(0, 255);
+let bottomOfPageColorBlue  = randomNumberInRange(0, 255);
   
 // generate random background radiant color
 document.querySelector("html").style.background = `
     linear-gradient(
         0deg, 
-        rgb(${randomNumberInRange(0, 255)}  
-            ${randomNumberInRange(0, 255)}
-            ${randomNumberInRange(0, 255)} / 15%) 0%,
+        rgb(${bottomOfPageColorRed}  
+            ${bottomOfPageColorGreen}
+            ${bottomOfPageColorBlue} / 15%) 0%,
         rgb(${randomNumberInRange(0, 255)}  
             ${randomNumberInRange(0, 255)}
             ${randomNumberInRange(0, 255)} / 15%) 49%,
@@ -209,4 +211,16 @@ ukInlineClips.forEach(function(ukInlineClip) {
             ${topOfPageColorGreen}
             ${topOfPageColorBlue} / 38%`;
 });
+
+// Apply randomly generated colors to scrollbar as well
+document.querySelector("#scrollbar-style").innerHTML += `
+    body::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg,rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .99), rgb(${bottomOfPageColorRed}, ${bottomOfPageColorGreen}, ${bottomOfPageColorBlue}, .4));
+        border-radius: 20px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: linear-gradient(0deg, rgb(${bottomOfPageColorRed}, ${bottomOfPageColorGreen}, ${bottomOfPageColorBlue}, .15), rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .15));
+    }
+`;
 
