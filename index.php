@@ -37,8 +37,6 @@
             scrollbar-width: 30px;
             scrollbar-color: #90A4AE #CFD8DC;
         }
-
-
     </style>
     <!-- /Style tag that will be used to dynamically style scrollbar -->
 
