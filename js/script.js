@@ -35,7 +35,7 @@ xhttp.onload = (e) => {
         latestCommitLink = "https://github.com/" + latestCommitLink;
 
         // Update text to show latest commit details
-        document.querySelector("#latest-commit-display").innerHTML = "Latest commit";
+        document.querySelector("#latest-commit-display").innerHTML = "Latest Commit";
         document.querySelector("#latest-commit-project").innerHTML = latestCommitProject;
         document.querySelector("#latest-commit-message").innerHTML = latestCommitMessage;
         document.querySelector("#latest-commit-time").innerHTML = latestCommitTime.toLocaleString();
