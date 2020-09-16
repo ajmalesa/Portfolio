@@ -62,7 +62,7 @@
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
 
-            <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: true">
+            <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
                 <h2 id="about" class="anchor-links">About</h2>
             </div>
             <div class="uk-grid">
@@ -75,7 +75,7 @@
                     </p>
                 </div>
                 <div id="commit-section" class="uk-width-1-2@l">
-                    <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-right; repeat: true">
+                    <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-right; repeat: false">
                         <span id="latest-commit-display"></span>
                         <a href="#" target="_blank" id="latest-commit-link" rel="noreferrer">    
                             <div id="latest-commit-project" class="uk-text-capitalize"></div>
@@ -92,12 +92,12 @@
 
         <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
 
-            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <h2 id="projects" class="anchor-links">Projects</h2>
             </div>
             
             <!-- Filter and sort selection -->
-            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <div class="uk-width-expand">
         
                     <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
@@ -140,7 +140,7 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
@@ -293,7 +293,7 @@
 
         <!-- Skills section -->
         <div class="uk-margin-medium-top" uk-grid>
-            <div uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <h2 id="skills">Skills</h2> 
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
@@ -303,7 +303,7 @@
             </div>
         </div>
 
-        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
             <div class="uk-width-1-4@m uk-width-1-3@s">
                 <ul class="accordion" uk-accordion="multiple: true">
                     <li>
@@ -459,7 +459,7 @@
         <hr class="darker-hr">
         
         <!-- Contact section -->
-        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
+        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: false">
             <h4>Like what you see? <a href="#" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
