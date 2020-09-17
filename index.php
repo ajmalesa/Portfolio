@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">
