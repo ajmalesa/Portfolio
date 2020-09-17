@@ -4,18 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajmal Esa's game projects. Peruse and contact me from main domain (ajmalesa.com) if you like what you see.">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="css/nes.min.css" rel="stylesheet">
     <script src="js/typed.js"></script>
     <link href="css/custom.css" rel="stylesheet">
-    <title>Ajmal esa</title>
+    <title>Ajmal Esa</title>
 </head>
 
-
-<body>
-    
-    </div>
-    
+<body>    
     <div id="display-content">
         <img id="avatar" src="img/avatar.png"> 
         <div class="nes-table-responsive">
@@ -71,8 +68,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    
-
 </body>
-
 </html>
