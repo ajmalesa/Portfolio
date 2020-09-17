@@ -97,8 +97,7 @@ so we scroll to the correct location taking the navbar into account */
         opacity: 1;
     }
 }
-/* End fade table in  */
-
+/* End fade sentences in  */
 
 @media (max-width: 1199px) {
     .commit-details {

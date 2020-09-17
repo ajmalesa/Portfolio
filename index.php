@@ -17,6 +17,28 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <!-- Style tag that will be used to dynamically style scrollbar -->
+    <style id="scrollbar-style">
+        .scrollbar
+        {
+            margin-left: 30px;
+            float: left;
+            height: 300px;
+            width: 65px;
+            background: #F5F5F5;
+            overflow-y: scroll;
+            margin-bottom: 25px;
+        }
+        body::-webkit-scrollbar {
+            width: 15px;    
+        }
+        body {
+            scrollbar-width: 30px;
+            scrollbar-color: #90A4AE #CFD8DC;
+        }
+    </style>
+    <!-- /Style tag that will be used to dynamically style scrollbar -->
+
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">
@@ -39,7 +61,7 @@
 
         <!-- Mobile Navigation Menu On The Right -->
         <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
-            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#"></a>
+            <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" aria-label="Toggle Mobile Navbar"></a>
         </div>
 
         <div class="uk-hidden@m" id="offcanvas-nav-primary" uk-offcanvas="flip: true; overlay: true">
@@ -61,7 +83,7 @@
     <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
 
-            <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: true">
+            <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
                 <h2 id="about" class="anchor-links">About</h2>
             </div>
             <div class="uk-grid">
@@ -74,9 +96,9 @@
                     </p>
                 </div>
                 <div id="commit-section" class="uk-width-1-2@l">
-                    <div uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-right; repeat: true">
+                    <div >
                         <span id="latest-commit-display"></span>
-                        <a href="#" target="_blank" id="latest-commit-link">    
+                        <a href="#" target="_blank" id="latest-commit-link" rel="noreferrer">    
                             <div id="latest-commit-project" class="uk-text-capitalize"></div>
                             <div id="latest-commit-message"></div>
                             <div id="latest-commit-time"></div>
@@ -91,12 +113,12 @@
 
         <div class="uk-margin-medium-top uk-margin-large-bottom" uk-filter="target: .js-filter">
 
-            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div class="uk-margin-small-bottom" uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <h2 id="projects" class="anchor-links">Projects</h2>
             </div>
             
             <!-- Filter and sort selection -->
-            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div class="uk-grid-small uk-flex-middle uk-visible@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <div class="uk-width-expand">
         
                     <div class="uk-grid-small uk-grid-divider uk-child-width-auto" uk-grid>
@@ -139,13 +161,17 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
                 <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/tracker-website.png" alt="Screenshot of tracker program">
+                            <picture>
+                                <source srcset="img/tracker-website.webp" type="image/webp">
+                                <source srcset="img/tracker-website.png" type="image/jpeg"> 
+                                <img src="img/tracker-website.png" alt="Screenshot of tracker program">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -188,7 +214,11 @@
                 <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/shop-marketapts.png" alt="Screenshot of tracker program">
+                            <picture>
+                                <source srcset="img/shop-marketapts.webp" type="image/webp">
+                                <source srcset="img/shop-marketapts.png" type="image/jpeg"> 
+                                <img src="img/shop-marketapts.png" alt="Screenshot of Shop MarketApts">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -232,7 +262,11 @@
                 <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <img src="img/seddit.PNG" alt="Screenshot of Seddit">
+                            <picture>
+                                <source srcset="img/seddit.webp" type="image/webp">
+                                <source srcset="img/seddit.png" type="image/jpeg"> 
+                                <img src="img/seddit.png" alt="Screenshot of Seddit">
+                            </picture>
                             <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
@@ -280,7 +314,7 @@
 
         <!-- Skills section -->
         <div class="uk-margin-medium-top" uk-grid>
-            <div uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: true">
+            <div uk-scrollspy="cls: uk-animation-slide-left-medium; repeat: false">
                 <h2 id="skills">Skills</h2> 
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
@@ -290,7 +324,7 @@
             </div>
         </div>
 
-        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: true">
+        <div class="uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
             <div class="uk-width-1-4@m uk-width-1-3@s">
                 <ul class="accordion" uk-accordion="multiple: true">
                     <li>
@@ -446,7 +480,7 @@
         <hr class="darker-hr">
         
         <!-- Contact section -->
-        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: true">
+        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: false">
             <h4>Like what you see? <a href="#" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
@@ -462,13 +496,13 @@
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Your email*">
+                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Email*">
                             </div>
                         </div>
 
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Your message*"></textarea>
+                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Message*"></textarea>
                             </div>
                         </div>
 
