@@ -104,3 +104,9 @@ so we scroll to the correct location taking the navbar into account */
         margin-top: 30px;
     }
 }
+
+/* Normalize H1 tag */
+.h1-unstyle {
+    margin-bottom: 0px;
+}
+/* End normalize H1 tag */
