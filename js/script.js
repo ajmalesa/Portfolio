@@ -218,7 +218,7 @@ ukInlineClips.forEach(function(ukInlineClip) {
 // Apply randomly generated colors to scrollbar as well
 document.querySelector("#scrollbar-style").innerHTML += `
     body::-webkit-scrollbar {
-        width: 15px;   
+        width: 10px;   
         background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .92); 
     }
     body::-webkit-scrollbar-thumb {
