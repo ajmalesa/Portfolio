@@ -160,7 +160,7 @@
                                 <source srcset="img/tracker-website.png" type="image/jpeg"> 
                                 <img src="img/tracker-website.png" alt="Screenshot of tracker program">
                             </picture>
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center custom-overlay-color uk-flex-middle">
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">
@@ -207,7 +207,7 @@
                                 <source srcset="img/shop-marketapts.png" type="image/jpeg"> 
                                 <img src="img/shop-marketapts.png" alt="Screenshot of Shop MarketApts">
                             </picture>
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle custom-overlay-color">
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">
@@ -255,7 +255,7 @@
                                 <source srcset="img/seddit.png" type="image/jpeg"> 
                                 <img src="img/seddit.png" alt="Screenshot of Seddit">
                             </picture>
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle">
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle custom-overlay-color">
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">

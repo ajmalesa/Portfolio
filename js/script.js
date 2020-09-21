@@ -240,3 +240,8 @@ document.querySelector("#scrollbar-style").innerHTML += `
     }
 `;
 
+// Apply randomly generated colors to project overlays as well
+let projectOverlays = document.querySelectorAll(".custom-overlay-color");
+projectOverlays.forEach(function(projectOverlay) {
+    projectOverlay.style.background = `rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .8 )`;
+});
