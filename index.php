@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ajmal Esa's web projects. Peruse and contact me if you like what you see.">
+    <meta name="keywords" content="Ajmal Esa, Portfolio, Web Developer">
     <title>Ajmal Esa</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -17,32 +18,19 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Style tag that will be used to dynamically style scrollbar -->
+    <!-- Style tag that will be used to dynamically style scrollbar from JavaScript -->
     <style id="scrollbar-style">
-        .scrollbar
-        {
-            margin-left: 30px;
-            float: left;
-            height: 300px;
-            width: 65px;
-            background: #F5F5F5;
-            overflow-y: scroll;
-            margin-bottom: 25px;
-        }
-        body::-webkit-scrollbar {
-            width: 15px;    
-        }
         body {
             scrollbar-width: 30px;
             scrollbar-color: #90A4AE #CFD8DC;
         }
     </style>
-    <!-- /Style tag that will be used to dynamically style scrollbar -->
+    <!-- /Style tag that will be used to dynamically style scrollbar from JavaScript -->
 
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
         <div class="uk-navbar-left uk-margin-large-left">
-            <a href="#navbar" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a>
+            <h1 class="h1-unstyle"><a href="#navbar" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a></h1>
         </div>
         <!-- /Name display on the left -->
     
@@ -96,7 +84,7 @@
                     </p>
                 </div>
                 <div id="commit-section" class="uk-width-1-2@l">
-                    <div >
+                    <div>
                         <span id="latest-commit-display"></span>
                         <a href="#" target="_blank" id="latest-commit-link" rel="noreferrer">    
                             <div id="latest-commit-project" class="uk-text-capitalize"></div>

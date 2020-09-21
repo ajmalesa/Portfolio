@@ -171,12 +171,15 @@ function randomNumberInRange(min, max) {
 document.querySelector("html").style.background = "rgb(240,63,63)";
 
 // Use same random number for color so we can match it with other page colors
-let topOfPageColorRed   = randomNumberInRange(0, 40);
-let topOfPageColorGreen = randomNumberInRange(0, 40);
-let topOfPageColorBlue  = randomNumberInRange(0, 40);
-let bottomOfPageColorRed   = randomNumberInRange(0, 255);
-let bottomOfPageColorGreen = randomNumberInRange(0, 255);
-let bottomOfPageColorBlue  = randomNumberInRange(0, 255);
+let topOfPageColorRed       = randomNumberInRange(0, 40);
+let topOfPageColorGreen     = randomNumberInRange(0, 40);
+let topOfPageColorBlue      = randomNumberInRange(0, 40);
+let middleOfPageColorRed    = randomNumberInRange(0, 40);
+let middleOfPageColorGreen  = randomNumberInRange(0, 40);
+let middleOfPageColorBlue   = randomNumberInRange(0, 40);
+let bottomOfPageColorRed    = randomNumberInRange(0, 255);
+let bottomOfPageColorGreen  = randomNumberInRange(0, 255);
+let bottomOfPageColorBlue   = randomNumberInRange(0, 255);
   
 // generate random background radiant color
 document.querySelector("html").style.background = `
@@ -185,9 +188,9 @@ document.querySelector("html").style.background = `
         rgb(${bottomOfPageColorRed}  
             ${bottomOfPageColorGreen}
             ${bottomOfPageColorBlue} / 15%) 0%,
-        rgb(${randomNumberInRange(0, 255)}  
-            ${randomNumberInRange(0, 255)}
-            ${randomNumberInRange(0, 255)} / 15%) 49%,
+        rgb(${middleOfPageColorRed}  
+            ${middleOfPageColorGreen}
+            ${middleOfPageColorBlue} / 15%) 49%,
         rgb(${topOfPageColorRed} 
             ${topOfPageColorGreen}
             ${topOfPageColorBlue} / 6%) 100%
@@ -214,13 +217,26 @@ ukInlineClips.forEach(function(ukInlineClip) {
 
 // Apply randomly generated colors to scrollbar as well
 document.querySelector("#scrollbar-style").innerHTML += `
+    body::-webkit-scrollbar {
+        width: 10px;   
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .92); 
+    }
     body::-webkit-scrollbar-thumb {
-        background: linear-gradient(180deg,rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .99), rgb(${bottomOfPageColorRed}, ${bottomOfPageColorGreen}, ${bottomOfPageColorBlue}, .4));
+        background: linear-gradient(180deg, rgb(${topOfPageColorRed + 150},
+                                                ${topOfPageColorGreen + 150}, 
+                                                ${topOfPageColorBlue + 150}, .99), 
+                                            rgb(${bottomOfPageColorRed + 150}, 
+                                                ${bottomOfPageColorGreen + 150}, 
+                                                ${bottomOfPageColorBlue + 150}, .6));
         border-radius: 20px;
     }
-
     body::-webkit-scrollbar-track {
-        background: linear-gradient(0deg, rgb(${bottomOfPageColorRed}, ${bottomOfPageColorGreen}, ${bottomOfPageColorBlue}, .15), rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .15));
+        background: linear-gradient(0deg,   rgb(${bottomOfPageColorRed}, 
+                                                ${bottomOfPageColorGreen}, 
+                                                ${bottomOfPageColorBlue}, .15), 
+                                            rgb(${topOfPageColorRed}, 
+                                                ${topOfPageColorGreen}, 
+                                                ${topOfPageColorBlue}, .15));
     }
 `;
 
