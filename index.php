@@ -496,18 +496,18 @@
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Email*">
+                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Email">
                             </div>
                         </div>
 
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Message*"></textarea>
+                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Message"></textarea>
                             </div>
                         </div>
 
                         <div class="uk-margin" uk-margin>
-                            <button type="button" id="send-message-button" class="uk-button uk-button-default" disabled>Send message</button>
+                            <button type="button" id="send-message-button" class="uk-button uk-button-default" disabled>Send</button>
                         </div>
                     </form>
                 </div>
