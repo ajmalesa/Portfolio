@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <!-- Style tag that will be used to dynamically style scrollbar from JavaScript -->
+    <!-- Style tag that will be used to dynamically style page using JavaScript -->
     <style id="scrollbar-style">
         body {
             scrollbar-width: 30px;
             scrollbar-color: #90A4AE #CFD8DC;
         }
     </style>
-    <!-- /Style tag that will be used to dynamically style scrollbar from JavaScript -->
+    <!-- /Style tag that will be used to dynamically style page using JavaScript -->
 
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
@@ -135,7 +135,7 @@
                         </div>
                         <div>
                             <ul class="uk-subnav uk-subnav-pill" uk-margin>
-                                <li ><a href="/games" class="uk-text-emphasis" target="_blank">GAMES</a></li>
+                                <li ><a href="/games" class="uk-text-emphasis rounded-border" target="_blank">GAMES</a></li>
                             </ul>
                         </div>
                     </div>
@@ -306,8 +306,8 @@
                 <h2 id="skills">Skills</h2> 
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
-                    <li class="uk-active" ><a id="show-all-button" href="#" class="uk-text-emphasis rounded-border">Show All</a></li>
-                    <li class="uk-active" ><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
+                    <li><a id="show-all-button" href="#" class="uk-text-emphasis rounded-border">Show All</a></li>
+                    <li><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
                 </ul>
             </div>
         </div>
