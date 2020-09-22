@@ -110,9 +110,13 @@ document.getElementById('hide-all-button').addEventListener('click', function() 
 // Prevent the default action on show all and hide all buttons so page does not scroll on click
 document.getElementById("show-all-button").addEventListener("click", function(event){
     event.preventDefault()
+    document.getElementById("show-all-button").parentNode.classList.add("uk-active");
+    document.getElementById("hide-all-button").parentNode.classList.remove("uk-active");
 });
 document.getElementById("hide-all-button").addEventListener("click", function(event){
     event.preventDefault()
+    document.getElementById("hide-all-button").parentNode.classList.add("uk-active");
+    document.getElementById("show-all-button").parentNode.classList.remove("uk-active");
 });
 
 // Validate contact form
@@ -215,7 +219,7 @@ ukInlineClips.forEach(function(ukInlineClip) {
             ${topOfPageColorBlue} / 38%`;
 });
 
-// Apply randomly generated colors to scrollbar as well
+// Apply randomly generated colors to scrollbar, buttons and badges
 document.querySelector("#scrollbar-style").innerHTML += `
     body::-webkit-scrollbar {
         width: 10px;   
@@ -237,6 +241,20 @@ document.querySelector("#scrollbar-style").innerHTML += `
                                             rgb(${topOfPageColorRed}, 
                                                 ${topOfPageColorGreen}, 
                                                 ${topOfPageColorBlue}, .15));
+    }
+
+    .uk-subnav-pill>*>a:focus, .uk-subnav-pill>*>a:hover {
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .85);
+        color: white!important;
+    }
+
+    .uk-subnav-pill>.uk-active>a {
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .85);
+        color: #fff;
+    }
+
+    .uk-badge {
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
     }
 `;
 
