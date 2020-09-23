@@ -475,27 +475,27 @@
 
         <!-- Contact form modal -->
         <div id="contact-modal" uk-modal>
-            <div class="uk-modal-dialog rounded-border">
+            <div class="uk-modal-dialog rounded-border black-border uk-background-secondary">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <div class="uk-modal-header rounded-border">
+                <div class="uk-modal-header rounded-border black-border uk-light uk-background-secondary">
                     <h2 class="uk-modal-title">Contact</h2>    
                 </div>
-                <div class="uk-modal-body">
+                <div class="uk-modal-body uk-light rounded-border uk-background-secondary">
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input" placeholder="Email">
+                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
                             </div>
                         </div>
 
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea" placeholder="Message"></textarea>
+                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea rounded-border" placeholder="Message"></textarea>
                             </div>
                         </div>
 
                         <div class="uk-margin" uk-margin>
-                            <button type="button" id="send-message-button" class="uk-button uk-button-default" disabled>Send</button>
+                            <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border" disabled>Send</button>
                         </div>
                     </form>
                 </div>

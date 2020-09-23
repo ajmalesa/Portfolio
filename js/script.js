@@ -154,13 +154,13 @@ document.querySelector("#send-message-button").addEventListener("click", functio
     document.querySelector("#contact-message").value = "";
 
     // Change send message button to show user feedback that their message was sent
-    document.querySelector("#send-message-button").innerHTML = "MESSAGE SENT &#x2713;";
-    document.querySelector("#send-message-button").style.color = "dodgerblue";
+    document.querySelector("#send-message-button").innerHTML = "MESSAGE SENT <span class='green-text'>&#x2713;</span>";
+    document.querySelector("#send-message-button").style.color = "#c1c1c1";
 
     // Hide contact modal after set interval
     setTimeout(function() {
         UIkit.modal(document.querySelector("#contact-modal")).hide();
-        document.querySelector("#send-message-button").style.color = "black";
+        document.querySelector("#send-message-button").style.color = "#c1c1c1";
         document.querySelector("#send-message-button").innerHTML = "SEND MESSAGE";
     }, 1500);
     
