@@ -116,3 +116,9 @@ so we scroll to the correct location taking the navbar into account */
     transition: 0.3s ease-in-out;
 }
 /* End Slow down animation of button hover to match project hover */
+
+/* Add black border */
+.black-border {
+    border: black;
+}
+/* End add black border */
