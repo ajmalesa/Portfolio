@@ -204,10 +204,14 @@ document.querySelector("html").style.backgroundAttachment = "fixed";
 
 // use random solid color for mobile and desktop navbar
 document.querySelectorAll(".uk-navbar")[0].style.background = `
-    rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .92)
+    rgb(${topOfPageColorRed}, 
+        ${topOfPageColorGreen}, 
+        ${topOfPageColorBlue}, .92)
 `;
 document.querySelectorAll(".uk-offcanvas-bar")[0].style.background = `
-    rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .99)
+    rgb(${topOfPageColorRed}, 
+        ${topOfPageColorGreen}, 
+        ${topOfPageColorBlue}, .99)
 `;
 
 // Apply randomly generated colors to box shadows of projects as well
@@ -223,7 +227,9 @@ ukInlineClips.forEach(function(ukInlineClip) {
 document.querySelector("#scrollbar-style").innerHTML += `
     body::-webkit-scrollbar {
         width: 10px;   
-        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .92); 
+        background: rgb(${topOfPageColorRed}, 
+                        ${topOfPageColorGreen}, 
+                        ${topOfPageColorBlue}, .92); 
     }
     body::-webkit-scrollbar-thumb {
         background: linear-gradient(180deg, rgb(${topOfPageColorRed + 150},
@@ -244,17 +250,23 @@ document.querySelector("#scrollbar-style").innerHTML += `
     }
 
     .uk-subnav-pill>*>a:focus, .uk-subnav-pill>*>a:hover {
-        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .85);
+        background: rgb(${topOfPageColorRed}, 
+                        ${topOfPageColorGreen}, 
+                        ${topOfPageColorBlue}, .85);
         color: white!important;
     }
 
     .uk-subnav-pill>.uk-active>a {
-        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .85);
+        background: rgb(${topOfPageColorRed}, 
+                        ${topOfPageColorGreen}, 
+                        ${topOfPageColorBlue}, .85);
         color: #fff;
     }
 
     .uk-badge {
-        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
+        background: rgb(${topOfPageColorRed}, 
+                        ${topOfPageColorGreen}, 
+                        ${topOfPageColorBlue}, .65);
     }
 
     html {
@@ -274,5 +286,7 @@ document.querySelector("#scrollbar-style").innerHTML += `
 // Apply randomly generated colors to project overlays as well
 let projectOverlays = document.querySelectorAll(".custom-overlay-color");
 projectOverlays.forEach(function(projectOverlay) {
-    projectOverlay.style.background = `rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .8 )`;
+    projectOverlay.style.background = `rgb(${topOfPageColorRed}, 
+                                           ${topOfPageColorGreen}, 
+                                           ${topOfPageColorBlue}, .8 )`;
 });
