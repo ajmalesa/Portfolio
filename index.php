@@ -287,7 +287,6 @@
                                 <span class="uk-badge">JavaScript</span>
                                 <span class="uk-badge">Linux</span>
                                 <span class="uk-badge">Ubuntu Server Configuration</span>
-                                
                             </div>
                         </div>
                     </div>
