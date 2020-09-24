@@ -256,6 +256,19 @@ document.querySelector("#scrollbar-style").innerHTML += `
     .uk-badge {
         background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
     }
+
+    html {
+        scrollbar-color: 
+            rgb(${topOfPageColorRed + 150},
+                ${topOfPageColorGreen + 150}, 
+                ${topOfPageColorBlue + 150}, .99) 
+            rgb(${topOfPageColorRed}, 
+                ${topOfPageColorGreen}, 
+                ${topOfPageColorBlue}, .92) 
+            !important;
+        scrollbar-width: 10px!important;
+    }
+    
 `;
 
 // Apply randomly generated colors to project overlays as well
