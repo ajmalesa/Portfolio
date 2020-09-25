@@ -307,7 +307,7 @@
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
                     <li><a id="show-all-button" href="#" class="uk-text-emphasis rounded-border">Show All</a></li>
-                    <li><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
+                    <li class="uk-active"><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
                 </ul>
             </div>
         </div>
