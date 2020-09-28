@@ -13,7 +13,7 @@
 
     <!-- UIkit JS -->
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <script defer src="js/uikit-icons.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
