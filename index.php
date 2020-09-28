@@ -152,7 +152,7 @@
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
-                <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
+                <li class="popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -199,7 +199,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -247,7 +247,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -259,7 +259,7 @@
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">
-                                            <h4 class="uk-card-title">UBWest WordPress Blog</h4>
+                                            <h4 class="uk-card-title">UBWest WordPress</h4>
                                         </div>
                                         <div class="uk-card-footer">
                                             <a href="https://www.ubwest.com/multifamily-utility-billing/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
@@ -295,7 +295,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
+                <li class="popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
