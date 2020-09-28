@@ -477,10 +477,10 @@
         <div id="contact-modal" uk-modal>
             <div class="uk-modal-dialog rounded-border black-border uk-background-secondary">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <div class="uk-modal-header rounded-border black-border uk-light uk-background-secondary">
+                <div class="uk-modal-header rounded-border black-border uk-light uk-background-secondary contact-header">
                     <h2 class="uk-modal-title">Contact</h2>    
                 </div>
-                <div class="uk-modal-body uk-light rounded-border uk-background-secondary">
+                <div class="uk-modal-body uk-light rounded-border uk-background-secondary contact-body">
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">

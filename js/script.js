@@ -256,6 +256,23 @@ document.querySelector("#scrollbar-style").innerHTML += `
     .uk-badge {
         background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
     }
+
+    .contact-body, .contact-header {
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
+    }
+
+    .contact-body {
+        border-top: 1px solid rgb(  ${topOfPageColorRed + 100}, 
+                                    ${topOfPageColorGreen + 100}, 
+                                    ${topOfPageColorBlue + 100}, .75);
+    }
+
+    #send-message-button {
+        border: 1px solid rgb(  ${topOfPageColorRed + 100}, 
+                                ${topOfPageColorGreen + 100}, 
+                                ${topOfPageColorBlue + 100}, .75);
+        background-color: rgba(255,255,255,.1);
+    }
 `;
 
 // Apply randomly generated colors to project overlays as well

@@ -122,3 +122,13 @@ so we scroll to the correct location taking the navbar into account */
     border: black;
 }
 /* End add black border */
+
+/* Style send message button with border color and transition */
+#send-message-button:hover {
+    border: 1px solid #e5e5e5;
+    transition: .3s;
+}
+#send-message-button {
+    transition: .3s;
+}
+/* End Style send message button with border color and transition */
