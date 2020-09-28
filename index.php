@@ -247,7 +247,55 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="personal" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                <li project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
+                            <picture>
+                                <source srcset="img/ubwest-blog.webp" type="image/webp">
+                                <source srcset="img/ubwest-blog.png" type="image/jpeg"> 
+                                <img src="img/ubwest-blog.png" alt="Screenshot of UBWest WordPress Blog">
+                            </picture>
+                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle custom-overlay-color">
+                                <div>
+                                    <div class="uk-card">
+                                        <div class="uk-card-header">
+                                            <h4 class="uk-card-title">UBWest WordPress Blog</h4>
+                                        </div>
+                                        <div class="uk-card-footer">
+                                            <a href="https://www.ubwest.com/multifamily-utility-billing/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
+                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #ubwest-blog-details">DETAILS</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>        
+                    </div>  
+                    <!-- Details modal -->
+                    <div id="ubwest-blog-details" uk-modal>
+                        <div class="uk-modal-dialog rounded-border">
+                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                            <div class="uk-modal-header rounded-border">
+                                <h2 class="uk-modal-title">UBWest WordPress Blog</h2>    
+                            </div>
+                            <div class="uk-modal-body">
+                                <p>Utility Billing West WordPress blog. Worked with CEO on PHP and server configuration to setup WordPress blog alongside existing domain. </p>
+                            </div>
+                            <div class="uk-modal-footer rounded-border">
+                                <span class="uk-badge">WordPress</span>
+                                <span class="uk-badge">SEO</span>
+                                <span class="uk-badge">PHP</span>
+                                <span class="uk-badge">JavaScript</span>
+                                <span class="uk-badge">Linux</span>
+                                <span class="uk-badge">Ubuntu Server Configuration</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Details modal -->               
+                </li>
+                <!-- /Individual project -->
+
+                <!-- Individual project -->
+                <li project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
