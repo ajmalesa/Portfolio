@@ -159,3 +159,12 @@ so we scroll to the correct location taking the navbar into account */
     to{transform:scale(1)}
 }
 /* End popout animation on projects */
+
+/* Reset project details styles */
+.project-details-header {
+    border-bottom: none;
+}
+.project-details-footer {
+    border-top: none;
+}
+/* End reset project details styles */
