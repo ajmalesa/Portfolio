@@ -269,11 +269,17 @@ document.querySelector("#scrollbar-style").innerHTML += `
                         ${topOfPageColorBlue}, .65);
     }
 
-    .contact-body, .contact-header {
+    .project-badge {
+        background: rgb(${topOfPageColorRed + 50}, 
+                        ${topOfPageColorGreen + 50}, 
+                        ${topOfPageColorBlue + 50}, .5);
+    }
+
+    .contact-body, .contact-header, .project-details-header, .project-details-body, .project-details-footer {
         background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
     }
 
-    .contact-body {
+    .contact-body, .project-details-body, .project-details-footer {
         border-top: 1px solid rgb(  ${topOfPageColorRed + 100}, 
                                     ${topOfPageColorGreen + 100}, 
                                     ${topOfPageColorBlue + 100}, .75);

@@ -178,19 +178,19 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="tracker-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Tracker</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Tracker program with full CRUD functionality.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">CSS</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">CSS</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
@@ -224,21 +224,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="shop-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Shop MarketApts</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Shop for downloadable digital content. OpenCart base with PayPal, Google Signin & other integrations.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">E-COMMERCE</span>
-                                <span class="uk-badge">OPENCART</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">TWIG</span>
-                                <span class="uk-badge">CSS</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">E-COMMERCE</span>
+                                <span class="uk-badge project-badge">OPENCART</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">TWIG</span>
+                                <span class="uk-badge project-badge">CSS</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
@@ -272,21 +272,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="ubwest-blog-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">UBWest WordPress Blog</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Utility Billing West WordPress blog. Worked with CEO on PHP and server configuration to setup WordPress blog alongside existing domain. </p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">WordPress</span>
-                                <span class="uk-badge">SEO</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">Linux</span>
-                                <span class="uk-badge">Ubuntu Server Configuration</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">WordPress</span>
+                                <span class="uk-badge project-badge">SEO</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">Linux</span>
+                                <span class="uk-badge project-badge">Ubuntu Server Configuration</span>
                             </div>
                         </div>
                     </div>
@@ -321,21 +321,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="seddit-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Seddit</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Reddit clone that I made to familiarize myself with Laravel and MVC.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">Laravel</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">MySQL</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">JQuery</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">Laravel</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">MySQL</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">JQuery</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
