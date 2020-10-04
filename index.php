@@ -532,7 +532,7 @@
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
+                                <input type="email" name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
                             </div>
                         </div>
 
