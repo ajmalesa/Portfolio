@@ -226,7 +226,7 @@ ukInlineClips.forEach(function(ukInlineClip) {
 // Apply randomly generated colors to scrollbar, buttons and badges
 document.querySelector("#scrollbar-style").innerHTML += `
     body::-webkit-scrollbar {
-        width: 10px;   
+        width: 12px;   
         background: rgb(${topOfPageColorRed}, 
                         ${topOfPageColorGreen}, 
                         ${topOfPageColorBlue}, .92); 
