@@ -269,6 +269,29 @@ document.querySelector("#scrollbar-style").innerHTML += `
                         ${topOfPageColorBlue}, .65);
     }
 
+    .project-badge {
+        background: rgb(${topOfPageColorRed + 50}, 
+                        ${topOfPageColorGreen + 50}, 
+                        ${topOfPageColorBlue + 50}, .5);
+    }
+
+    .contact-body, .contact-header, .project-details-header, .project-details-body, .project-details-footer {
+        background: rgb(${topOfPageColorRed}, ${topOfPageColorGreen}, ${topOfPageColorBlue}, .65);
+    }
+
+    .contact-body, .project-details-body, .project-details-footer {
+        border-top: 1px solid rgb(  ${topOfPageColorRed + 100}, 
+                                    ${topOfPageColorGreen + 100}, 
+                                    ${topOfPageColorBlue + 100}, .75);
+    }
+
+    #send-message-button {
+        border: 1px solid rgb(  ${topOfPageColorRed + 100}, 
+                                ${topOfPageColorGreen + 100}, 
+                                ${topOfPageColorBlue + 100}, .75);
+        background-color: rgba(255,255,255,.1);
+    }
+    
     html {
         scrollbar-color: 
             rgb(${topOfPageColorRed + 150},
@@ -280,7 +303,6 @@ document.querySelector("#scrollbar-style").innerHTML += `
             !important;
         scrollbar-width: 10px!important;
     }
-    
 `;
 
 // Apply randomly generated colors to project overlays as well

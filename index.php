@@ -13,7 +13,7 @@
 
     <!-- UIkit JS -->
     <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
+    <script defer src="js/uikit-icons.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -152,7 +152,7 @@
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
-                <li project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
+                <li class="popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -178,19 +178,19 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="tracker-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Tracker</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Tracker program with full CRUD functionality.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">CSS</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">CSS</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -224,21 +224,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="shop-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Shop MarketApts</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Shop for downloadable digital content. OpenCart base with PayPal, Google Signin & other integrations.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">E-COMMERCE</span>
-                                <span class="uk-badge">OPENCART</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">TWIG</span>
-                                <span class="uk-badge">CSS</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">E-COMMERCE</span>
+                                <span class="uk-badge project-badge">OPENCART</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">TWIG</span>
+                                <span class="uk-badge project-badge">CSS</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -259,7 +259,7 @@
                                 <div>
                                     <div class="uk-card">
                                         <div class="uk-card-header">
-                                            <h4 class="uk-card-title">UBWest WordPress Blog</h4>
+                                            <h4 class="uk-card-title">UBWest WordPress</h4>
                                         </div>
                                         <div class="uk-card-footer">
                                             <a href="https://www.ubwest.com/multifamily-utility-billing/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
@@ -272,21 +272,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="ubwest-blog-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">UBWest WordPress Blog</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Utility Billing West WordPress blog. Worked with CEO on PHP and server configuration to setup WordPress blog alongside existing domain. </p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">WordPress</span>
-                                <span class="uk-badge">SEO</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">Linux</span>
-                                <span class="uk-badge">Ubuntu Server Configuration</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">WordPress</span>
+                                <span class="uk-badge project-badge">SEO</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">Linux</span>
+                                <span class="uk-badge project-badge">Ubuntu Server Configuration</span>
                             </div>
                         </div>
                     </div>
@@ -295,7 +295,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
+                <li class="popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -321,21 +321,21 @@
                     </div>  
                     <!-- Details modal -->
                     <div id="seddit-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border">
+                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
                             <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header rounded-border">
+                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
                                 <h2 class="uk-modal-title">Seddit</h2>    
                             </div>
-                            <div class="uk-modal-body">
+                            <div class="uk-modal-body uk-light project-details-body">
                                 <p>Reddit clone that I made to familiarize myself with Laravel and MVC.</p>
                             </div>
-                            <div class="uk-modal-footer rounded-border">
-                                <span class="uk-badge">Laravel</span>
-                                <span class="uk-badge">PHP</span>
-                                <span class="uk-badge">MySQL</span>
-                                <span class="uk-badge">JavaScript</span>
-                                <span class="uk-badge">JQuery</span>
-                                <span class="uk-badge">HTML</span>
+                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
+                                <span class="uk-badge project-badge">Laravel</span>
+                                <span class="uk-badge project-badge">PHP</span>
+                                <span class="uk-badge project-badge">MySQL</span>
+                                <span class="uk-badge project-badge">JavaScript</span>
+                                <span class="uk-badge project-badge">JQuery</span>
+                                <span class="uk-badge project-badge">HTML</span>
                             </div>
                         </div>
                     </div>
@@ -355,7 +355,7 @@
     
                 <ul class="uk-subnav uk-subnav-pill" uk-margin="">
                     <li><a id="show-all-button" href="#" class="uk-text-emphasis rounded-border">Show All</a></li>
-                    <li><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
+                    <li class="uk-active"><a id="hide-all-button" href="#" class="uk-text-emphasis rounded-border">Hide All</a></li>
                 </ul>
             </div>
         </div>
@@ -525,10 +525,10 @@
         <div id="contact-modal" uk-modal>
             <div class="uk-modal-dialog rounded-border black-border uk-background-secondary">
                 <button class="uk-modal-close-default" type="button" uk-close></button>
-                <div class="uk-modal-header rounded-border black-border uk-light uk-background-secondary">
+                <div class="uk-modal-header rounded-border black-border uk-light uk-background-secondary contact-header">
                     <h2 class="uk-modal-title">Contact</h2>    
                 </div>
-                <div class="uk-modal-body uk-light rounded-border uk-background-secondary">
+                <div class="uk-modal-body uk-light rounded-border uk-background-secondary contact-body">
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">

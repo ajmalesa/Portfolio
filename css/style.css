@@ -122,3 +122,49 @@ so we scroll to the correct location taking the navbar into account */
     border: black;
 }
 /* End add black border */
+
+/* Style send message button with border color and transition */
+#send-message-button:hover {
+    border: 1px solid #e5e5e5;
+    transition: .3s;
+}
+#send-message-button {
+    transition: .3s;
+}
+/* End Style send message button with border color and transition */
+
+/* Popout animation on projects */
+.popout {
+    animation: endpopout .3s ease forwards;
+    -webkit-animation: endpopout .3s ease forwards;
+}
+.popout:hover {
+    animation: popout .3s ease forwards;
+    -webkit-animation: popout .3s ease forwards;
+}
+@keyframes popout {
+    from{transform:scale(1)}
+    to{transform:scale(1.1)}
+}
+@-webkit-keyframes popout {
+    from{-webkit-transform:scale(1)}
+    to{-webkit-transform:scale(1.1)}
+}
+@keyframes endpopout {
+    from{transform:scale(1.1)}
+    to{transform:scale(1)}
+}
+@-webkit-keyframes endpopout {
+    from{transform:scale(1.1)}
+    to{transform:scale(1)}
+}
+/* End popout animation on projects */
+
+/* Reset project details styles */
+.project-details-header {
+    border-bottom: none;
+}
+.project-details-footer {
+    border-top: none;
+}
+/* End reset project details styles */
