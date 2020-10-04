@@ -530,6 +530,15 @@
                 </div>
                 <div class="uk-modal-body uk-light rounded-border uk-background-secondary contact-body">
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
+                    
+                        <!-- Honeypot -->
+                        <div class="uk-width-1-1 display-none" style="display: none;">
+                            <div class="uk-inline uk-width-1-1">
+                                <input type="name" name="honeypot" id="honeypot" class="uk-input rounded-border" placeholder="Email">
+                            </div>
+                        </div>
+                        <!-- /Honeypot -->
+
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
                                 <input type="email" name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
