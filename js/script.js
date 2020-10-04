@@ -312,3 +312,15 @@ projectOverlays.forEach(function(projectOverlay) {
                                            ${topOfPageColorGreen}, 
                                            ${topOfPageColorBlue}, .8 )`;
 });
+
+// Add animations after mouse hovers over project because css :hover 
+// animation requires animation to run on page load 
+let popouts = document.querySelectorAll(".waiting-for-popout");
+popouts.forEach(function(popout) {
+    popout.addEventListener('mouseenter', function(e) {
+        popout.classList.add('popout');
+    });
+    popout.addEventListener('mouseleave', function(e) {
+        popout.classList.remove('popout');
+    });
+});

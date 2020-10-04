@@ -152,7 +152,7 @@
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
-                <li class="popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
+                <li class="waiting-for-popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -199,7 +199,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                <li class="waiting-for-popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -247,7 +247,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
+                <li class="waiting-for-popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -295,7 +295,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
+                <li class="waiting-for-popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
