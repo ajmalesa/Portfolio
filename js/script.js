@@ -6,44 +6,44 @@ let latestCommitLink;
 let latestCommitProject;
 let lastEvent;
 
+// Add event listener to request, so HTML is updated only if we receive 
+// a successful response and request is complete (status = 200 & readyState = 4)
+xhttp.addEventListener('readystatechange', (e) => {
+
+    if (xhttp.readyState === 4 && xhttp.status === 200) {
+        // Grab the last event
+        lastEvent = JSON.parse(xhttp.responseText)[0];
+    
+        // If the last event was a push, run this
+        if (lastEvent.type === "PushEvent") {
+            // Only add commit details class to commit section if there was a push
+            // event. Commit detials class will add margin to the top on mobile
+            document.querySelector("#commit-section").classList.add("commit-details");
+    
+            // Grab the latest commit details
+            latestCommitLink = lastEvent.repo.name;
+            latestCommitMessage = lastEvent.payload.commits[0].message;
+            latestCommitTime = new Date(lastEvent.created_at);
+            latestCommitProject = lastEvent.repo.name.split('/')[1];
+    
+            // Make a link variable to repo by prepending github domain to repo name
+            latestCommitLink = "https://github.com/" + latestCommitLink;
+    
+            // Update text to show latest commit details
+            document.querySelector("#latest-commit-display").innerHTML = "Latest Commit";
+            document.querySelector("#latest-commit-project").innerHTML = latestCommitProject;
+            document.querySelector("#latest-commit-message").innerHTML = latestCommitMessage;
+            document.querySelector("#latest-commit-time").innerHTML = latestCommitTime.toLocaleString();
+    
+            // Update link to URL created above
+            document.querySelector("#latest-commit-link").href = latestCommitLink;
+        }
+    }
+});
+
 // Send GET request to events endpoint of GitHub API
 xhttp.open("GET", "https://api.github.com/users/ajmalesa/events", true);
 xhttp.send();
-
-// Run this when readystate of the request changes
-xhttp.onload = (e) => {
-    // Grab the last event
-    try {
-        lastEvent = JSON.parse(xhttp.responseText)[0];
-    } catch {
-
-    }
-
-    // If the last event was a push, run this
-    if (lastEvent.type === "PushEvent") {
-        // Only add commit details class to commit section if there was a push
-        // event. Commit detials class will add margin to the top on mobile
-        document.querySelector("#commit-section").classList.add("commit-details");
-
-        // Grab the latest commit details
-        latestCommitLink = lastEvent.repo.name;
-        latestCommitMessage = lastEvent.payload.commits[0].message;
-        latestCommitTime = new Date(lastEvent.created_at);
-        latestCommitProject = lastEvent.repo.name.split('/')[1];
-
-        // Make a link variable to repo by prepending github domain to repo name
-        latestCommitLink = "https://github.com/" + latestCommitLink;
-
-        // Update text to show latest commit details
-        document.querySelector("#latest-commit-display").innerHTML = "Latest Commit";
-        document.querySelector("#latest-commit-project").innerHTML = latestCommitProject;
-        document.querySelector("#latest-commit-message").innerHTML = latestCommitMessage;
-        document.querySelector("#latest-commit-time").innerHTML = latestCommitTime.toLocaleString();
-
-        // Update link to URL created above
-        document.querySelector("#latest-commit-link").href = latestCommitLink;
-    }
-}
 
 // Add active class on selected section and remove active class on all other desktop nav menu items 
 document.getElementById('skills-button').addEventListener('click', function() {
