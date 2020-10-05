@@ -149,7 +149,7 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
                 <li class="waiting-for-popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
