@@ -29,13 +29,13 @@
 
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
-        <div class="uk-navbar-left uk-margin-large-left">
+        <div class="uk-navbar-left">
             <h1 class="h1-unstyle"><a href="#navbar" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a></h1>
         </div>
         <!-- /Name display on the left -->
     
         <!-- Navigation Menu For Screens With A Width Larger Than 960px -->
-        <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
+        <div class="uk-navbar-right uk-visible@m">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="#about" uk-scroll id="about-button">About</a></li>
                 <li><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
@@ -48,7 +48,7 @@
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
 
         <!-- Mobile Navigation Menu On The Right -->
-        <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
+        <div class="uk-hidden@m uk-navbar-right">
             <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" aria-label="Toggle Mobile Navbar"></a>
         </div>
 
@@ -68,7 +68,7 @@
         <!-- /Mobile Navigation Menu On The Right -->
     </nav>
 
-    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
+    <div class="uk-margin-large-top uk-margin-large-bottom center-main-content" >
         <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
 
             <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">

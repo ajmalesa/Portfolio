@@ -154,3 +154,44 @@ so we scroll to the correct location taking the navbar into account */
     border-top: none;
 }
 /* End reset project details styles */
+
+/* Remove logo padding-left */
+.uk-logo {
+    padding-left: 0px;
+}
+/* End remove logo padding-left */
+
+/* On smaller screens, use smaller margins */
+@media (max-width: 1199px) {
+    .center-main-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .uk-navbar-left {
+        margin-left: 5%;
+    }
+
+    .uk-navbar-right {
+        margin-right: 5%;
+    }
+}
+/* End on smaller screens, use smaller margins */
+
+/* On larger screens, center content */
+@media (min-width: 1200px) {
+    .center-main-content {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+    .uk-navbar-left {
+        margin-left: 18%;
+    }
+
+    .uk-navbar-right {
+        margin-right: 18%;
+    }
+}
+/* End on larger screens, center content */
+
