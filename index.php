@@ -551,7 +551,7 @@
                         </div>
 
                         <div class="uk-margin" uk-margin>
-                            <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border" disabled>Send</button>
+                            <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border">Send</button>
                         </div>
                     </form>
                 </div>

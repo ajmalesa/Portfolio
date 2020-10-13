@@ -124,46 +124,47 @@ function validateContactForm() {
     if (
         document.querySelector("#contact-email").value.length > 0 && 
         document.querySelector("#contact-message").value.length > 0
-    )
-    {
-        try {
-            document.querySelector("#send-message-button").attributes.removeNamedItem("disabled");
-        }
-        catch {
-
-        }
+    ) {    
+        return true;
     } 
-    else  
-    {
-        document.querySelector("#send-message-button").setAttribute('disabled', 'true');
+    else  {
+        return false;
     }
 }
 
 // Send message using AJAX when send message button is clicked 
 document.querySelector("#send-message-button").addEventListener("click", function() { 
 
-    document.querySelector("#send-message-button").setAttribute("disabled", "true");
+    // Only send contact message if form validates
+    if (validateContactForm()) {
+        document.querySelector("#send-message-button").setAttribute("disabled", "true");
 
-    const form = new FormData(document.getElementById('contact-form'));
-    fetch('/functions/contact-request.php', {
-        method: 'POST',
-        body: form
-    });
-
-    // Erase message value after in case they click send message again
-    document.querySelector("#contact-message").value = "";
-
-    // Change send message button to show user feedback that their message was sent
-    document.querySelector("#send-message-button").innerHTML = "MESSAGE SENT <span class='green-text'>&#x2713;</span>";
-    document.querySelector("#send-message-button").style.color = "#c1c1c1";
-
-    // Hide contact modal after set interval
-    setTimeout(function() {
-        UIkit.modal(document.querySelector("#contact-modal")).hide();
-        document.querySelector("#send-message-button").style.color = "#c1c1c1";
-        document.querySelector("#send-message-button").innerHTML = "SEND MESSAGE";
-    }, 1500);
+        const form = new FormData(document.getElementById('contact-form'));
+        fetch('/functions/contact-request.php', {
+            method: 'POST',
+            body: form
+        });
     
+        // Erase message value after in case they click send message again
+        document.querySelector("#contact-message").value = "";
+    
+        // Change send message button to show user feedback that their message was sent
+        document.querySelector("#send-message-button").innerHTML = "MESSAGE SENT <span class='green-text'>&#x2713;</span>";
+        document.querySelector("#send-message-button").style.color = "#c1c1c1";
+    
+        // Hide contact modal after set interval
+        setTimeout(function() {
+            UIkit.modal(document.querySelector("#contact-modal")).hide();
+            document.querySelector("#send-message-button").style.color = "#c1c1c1";
+            document.querySelector("#send-message-button").innerHTML = "SEND MESSAGE";
+        }, 1500);
+    } else {
+        if (document.querySelector("#contact-email").value.length < 1) {
+            document.querySelector("#contact-email").focus();
+        } else if (document.querySelector("#contact-message").value.length < 1) {
+            document.querySelector("#contact-message").focus();
+        }
+    }
 });
 
 /** Generate random number in range */
