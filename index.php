@@ -387,7 +387,6 @@
                                             <span class="uk-badge">MSSQL</span>
                                             <span class="uk-badge">Eloquent</span>
                                             <span class="uk-badge">Migrating</span>
-                                            <span class="uk-badge">Installation</span>
                                             <span class="uk-badge">Maintenance</span>
                                             <span class="uk-badge">Joins</span>
                                             <span class="uk-badge">Normalization</span>
