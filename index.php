@@ -327,7 +327,7 @@
                                 <h2 class="uk-modal-title">Seddit</h2>    
                             </div>
                             <div class="uk-modal-body uk-light project-details-body">
-                                <p>Reddit clone that I made to familiarize myself with Laravel and MVC.</p>
+                                <p>Reddit clone developed with Laravel, adhering to the MVC architectural pattern.</p>
                             </div>
                             <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
                                 <span class="uk-badge project-badge">Laravel</span>
