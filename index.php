@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ajmal Esa's web projects. Peruse and contact me if you like what you see.">
+    <meta name="description" content="Web developer portfolio for Ajmal Esa. Peruse projects, see demos, browse code and get in contact if you like what you see.">
     <meta name="keywords" content="Ajmal Esa, Portfolio, Web Developer">
     <title>Ajmal Esa</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -29,13 +29,13 @@
 
     <nav class="uk-background-secondary uk-light uk-navbar" uk-sticky>
         <!-- Name display on the left -->
-        <div class="uk-navbar-left">
+        <div class="uk-navbar-left uk-margin-large-left">
             <h1 class="h1-unstyle"><a href="#navbar" class="uk-navbar-item uk-logo uk-margin-small-right">Ajmal Esa</a></h1>
         </div>
         <!-- /Name display on the left -->
     
         <!-- Navigation Menu For Screens With A Width Larger Than 960px -->
-        <div class="uk-navbar-right uk-visible@m">
+        <div class="uk-navbar-right uk-visible@m uk-margin-large-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="#about" uk-scroll id="about-button">About</a></li>
                 <li><a href="#projects" uk-scroll id="projects-button">Projects</a></li>
@@ -48,7 +48,7 @@
         <!-- /Navigation Menu For Screens With A Width Larger Than 960px -->
 
         <!-- Mobile Navigation Menu On The Right -->
-        <div class="uk-hidden@m uk-navbar-right">
+        <div class="uk-hidden@m uk-navbar-right uk-margin-large-right">
             <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav-primary" uk-navbar-toggle-icon href="#" aria-label="Toggle Mobile Navbar"></a>
         </div>
 
@@ -68,7 +68,7 @@
         <!-- /Mobile Navigation Menu On The Right -->
     </nav>
 
-    <div class="uk-margin-large-top uk-margin-large-bottom center-main-content" >
+    <div class="uk-margin-large-left uk-margin-large-right uk-margin-large-top uk-margin-large-bottom" >
         <div class="uk-margin-medium-top uk-margin-medium-bottom" uk-filter="target: .js-filter">
 
             <div uk-scrollspy="cls: uk-animation-slide-top-small; repeat: false">
@@ -149,10 +149,10 @@
             <!-- /Filter and sort selection -->
         
             <!-- Masonry grid of all projects -->
-            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
+            <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
-                <li class="waiting-for-popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
+                <li class="popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -199,7 +199,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="waiting-for-popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -247,7 +247,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="waiting-for-popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
+                <li class="popout" project-type="work" primary-language="PHP JavaScript" data-name="UBWestBlog" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -295,7 +295,7 @@
                 <!-- /Individual project -->
 
                 <!-- Individual project -->
-                <li class="waiting-for-popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
+                <li class="popout" project-type="personal" primary-language="PHP JavaScript" data-name="Seddit" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
                             <picture>
@@ -327,7 +327,7 @@
                                 <h2 class="uk-modal-title">Seddit</h2>    
                             </div>
                             <div class="uk-modal-body uk-light project-details-body">
-                                <p>Reddit clone developed with Laravel, adhering to the MVC architectural pattern.</p>
+                                <p>Reddit clone that I made to familiarize myself with Laravel and MVC.</p>
                             </div>
                             <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
                                 <span class="uk-badge project-badge">Laravel</span>
@@ -387,6 +387,7 @@
                                             <span class="uk-badge">MSSQL</span>
                                             <span class="uk-badge">Eloquent</span>
                                             <span class="uk-badge">Migrating</span>
+                                            <span class="uk-badge">Installation</span>
                                             <span class="uk-badge">Maintenance</span>
                                             <span class="uk-badge">Joins</span>
                                             <span class="uk-badge">Normalization</span>
@@ -529,18 +530,9 @@
                 </div>
                 <div class="uk-modal-body uk-light rounded-border uk-background-secondary contact-body">
                     <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="functions/contact-request.php">
-                    
-                        <!-- Honeypot -->
-                        <div class="uk-width-1-1 display-none" style="display: none;">
-                            <div class="uk-inline uk-width-1-1">
-                                <input type="name" name="honeypot" id="honeypot" class="uk-input rounded-border" placeholder="Email">
-                            </div>
-                        </div>
-                        <!-- /Honeypot -->
-
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <input type="email" name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
+                                <input name="contact-email" id="contact-email"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Email">
                             </div>
                         </div>
 
@@ -551,7 +543,7 @@
                         </div>
 
                         <div class="uk-margin" uk-margin>
-                            <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border">Send</button>
+                            <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border" disabled>Send</button>
                         </div>
                     </form>
                 </div>
