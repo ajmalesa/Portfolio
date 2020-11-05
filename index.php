@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ajmal Esa's web projects. Peruse and contact me if you like what you see.">
+    <meta name="description" content="Web developer portfolio for Ajmal Esa. Peruse projects, see demos, browse code and get in contact if you like what you see.">
     <meta name="keywords" content="Ajmal Esa, Portfolio, Web Developer">
     <title>Ajmal Esa</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
