@@ -515,7 +515,7 @@
         <hr class="darker-hr">
         
         <!-- Contact section -->
-        <div class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: false">
+        <div class="uk-margin-medium-top padding-bottom-30" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: false">
             <h4>Like what you see? <a href="#" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->

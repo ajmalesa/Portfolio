@@ -195,3 +195,8 @@ so we scroll to the correct location taking the navbar into account */
 }
 /* End on larger screens, center content */
 
+/* Add padding below contact message at bottom of page  */
+.padding-bottom-30 {
+    padding-bottom: 30px;
+}
+/* End add padding below contact message at bottom of page  */
