@@ -215,7 +215,7 @@ document.querySelectorAll(".uk-offcanvas-bar")[0].style.background = `
         ${topOfPageColorBlue}, .99)
 `;
 
-// Apply randomly generated colors to box shadows of projects as well
+// Apply randomly generated colors to box shadows of projects
 let ukInlineClips = document.querySelectorAll(".uk-inline-clip");
 ukInlineClips.forEach(function(ukInlineClip) {
     ukInlineClip.style.boxShadow = `5px 5px 6px 3px 
@@ -223,6 +223,12 @@ ukInlineClips.forEach(function(ukInlineClip) {
             ${topOfPageColorGreen}
             ${topOfPageColorBlue} / 38%`;
 });
+
+// Apply randomly generated colors to box shadows of navbar
+document.querySelector(".uk-navbar").style.boxShadow = `5px 5px 6px 3px 
+    rgb(${topOfPageColorRed} 
+        ${topOfPageColorGreen}
+        ${topOfPageColorBlue} / 38%`;
 
 // Apply randomly generated colors to scrollbar, buttons and badges
 document.querySelector("#scrollbar-style").innerHTML += `
