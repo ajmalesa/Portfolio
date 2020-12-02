@@ -225,7 +225,7 @@ ukInlineClips.forEach(function(ukInlineClip) {
 });
 
 // Apply randomly generated colors to box shadows of navbar
-document.querySelector(".uk-navbar").style.boxShadow = `5px 5px 6px 3px 
+document.querySelector(".uk-navbar").style.boxShadow = `0px 4px 6px 3px 
     rgb(${topOfPageColorRed} 
         ${topOfPageColorGreen}
         ${topOfPageColorBlue} / 38%`;
