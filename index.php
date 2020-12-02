@@ -78,9 +78,8 @@
                 <div class="uk-width-1-2@l">
                     <p>
                         <span class="fade-first-sentence">I am a web developer with a passion for all things tech.</span> 
-                        <span class="fade-second-sentence">It started with writing scripts to impress friends & family in high school.</span>
+                        <span class="fade-second-sentence">I started in high school.</span>
                         <span class="fade-third-sentence">Now it has evolved into my livelihood.</span> 
-                        <span class="fade-fourth-sentence">That passion has remained evermore.</span>
                     </p>
                 </div>
                 <div id="commit-section" class="uk-width-1-2@l">
