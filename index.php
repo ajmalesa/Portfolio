@@ -86,7 +86,7 @@
                 <div id="commit-section" class="uk-width-1-2@l">
                     <div>
                         <span id="latest-commit-display"></span>
-                        <a href="#" target="_blank" id="latest-commit-link" rel="noreferrer">    
+                        <a href="#" target="_blank" class="uk-link-muted" id="latest-commit-link" rel="noreferrer">    
                             <div id="latest-commit-project" class="uk-text-capitalize"></div>
                             <div id="latest-commit-message"></div>
                             <div id="latest-commit-time"></div>
@@ -516,7 +516,7 @@
         
         <!-- Contact section -->
         <div class="uk-margin-medium-top padding-bottom-30" uk-scrollspy="cls: uk-animation-slide-bottom-small; repeat: false">
-            <h4>Like what you see? <a href="#" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
+            <h4>Like what you see? <a href="#" class="uk-link-muted" uk-toggle="target: #contact-modal">Send me a happy, electronic missive.</a></h4>
         </div>
         <!-- /Contact section -->
 
