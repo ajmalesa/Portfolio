@@ -123,7 +123,8 @@ document.getElementById("hide-all-button").addEventListener("click", function(ev
 function validateContactForm() {
     if (
         document.querySelector("#contact-email").value.length > 0 && 
-        document.querySelector("#contact-message").value.length > 0
+        document.querySelector("#contact-message").value.length > 0 && 
+        document.querySelector("#my-name").value === "Ajmal"
     ) {    
         return true;
     } 
@@ -163,6 +164,8 @@ document.querySelector("#send-message-button").addEventListener("click", functio
             document.querySelector("#contact-email").focus();
         } else if (document.querySelector("#contact-message").value.length < 1) {
             document.querySelector("#contact-message").focus();
+        } else if (document.querySelector("#my-name").value !== "Ajmal") {
+            document.querySelector("#my-name").focus();
         }
     }
 });

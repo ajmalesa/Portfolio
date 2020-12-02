@@ -549,6 +549,12 @@
                             </div>
                         </div>
 
+                        <div class="uk-width-1-1">
+                            <div class="uk-inline uk-width-1-1">
+                                <input type="text" name="my-name" id="my-name"  oninput="validateContactForm()" class="uk-input rounded-border" placeholder="Type Ajmal" title="Type my first name into this box to prove your humanity">
+                            </div>
+                        </div>
+
                         <div class="uk-margin" uk-margin>
                             <button type="button" id="send-message-button" class="uk-button uk-button-default rounded-border">Send</button>
                         </div>
