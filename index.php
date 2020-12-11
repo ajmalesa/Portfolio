@@ -545,7 +545,7 @@
 
                         <div class="uk-width-1-1">
                             <div class="uk-inline uk-width-1-1">
-                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea rounded-border" placeholder="Message"></textarea>
+                                <textarea rows="6" name="contact-message" id="contact-message" oninput="validateContactForm()" class="uk-textarea rounded-border uk-resize-vertical" placeholder="Message"></textarea>
                             </div>
                         </div>
 

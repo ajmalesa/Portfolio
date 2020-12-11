@@ -194,3 +194,9 @@ so we scroll to the correct location taking the navbar into account */
     padding-bottom: 30px;
 }
 /* End add padding below contact message at bottom of page  */
+
+/* Set minimum vertical height for message box */
+#contact-message {
+    min-height: 35px;
+}
+/* End set minimum vertical height for message box */
