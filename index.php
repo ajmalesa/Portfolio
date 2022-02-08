@@ -151,53 +151,6 @@
             <ul class="js-filter uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-text-center" uk-grid="masonry: true" uk-scrollspy="cls: uk-animation-slide-right-medium; repeat: false">
 
                 <!-- Individual project -->
-                <li class="waiting-for-popout" project-type="personal" primary-language="PHP" platform="desktop" data-name="Tracker">
-                    <div class="uk-text-center">
-                        <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
-                            <picture>
-                                <source srcset="img/tracker-website.webp" type="image/webp">
-                                <source srcset="img/tracker-website.png" type="image/jpeg"> 
-                                <img src="img/tracker-website.png" alt="Screenshot of tracker program">
-                            </picture>
-                            <div class="uk-transition-fade uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center custom-overlay-color uk-flex-middle">
-                                <div>
-                                    <div class="uk-card">
-                                        <div class="uk-card-header">
-                                            <h4 class="uk-card-title">Tracker</h4>
-                                        </div>
-                                        <div class="uk-card-footer">
-                                            <a href="https://bugcatcher.000webhostapp.com/" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">DEMO</a> |
-                                            <a href="https://github.com/ajmalesa/Tracker" class="uk-button uk-button-text project-links" target="_blank" rel="noreferrer">CODE</a> |
-                                            <a href="#" class="uk-button uk-button-text project-links" uk-toggle="target: #tracker-details" >DETAILS</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>        
-                    </div>  
-                    <!-- Details modal -->
-                    <div id="tracker-details" uk-modal>
-                        <div class="uk-modal-dialog rounded-border uk-background-secondary">
-                            <button class="uk-modal-close-default" type="button" uk-close></button>
-                            <div class="uk-modal-header project-details-header rounded-border uk-background-secondary uk-light">
-                                <h2 class="uk-modal-title">Tracker</h2>    
-                            </div>
-                            <div class="uk-modal-body uk-light project-details-body">
-                                <p>Tracker program with full CRUD functionality.</p>
-                            </div>
-                            <div class="uk-modal-footer rounded-border uk-background-secondary project-details-footer">
-                                <span class="uk-badge project-badge">PHP</span>
-                                <span class="uk-badge project-badge">JavaScript</span>
-                                <span class="uk-badge project-badge">CSS</span>
-                                <span class="uk-badge project-badge">HTML</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /Details modal -->               
-                </li>
-                <!-- /Individual project -->
-
-                <!-- Individual project -->
                 <li class="waiting-for-popout" project-type="work" primary-language="PHP JavaScript" data-name="Shop" platform="mobile desktop">
                     <div class="uk-text-center">
                         <div class="uk-inline-clip rounded-border uk-transition-toggle" tabindex="0">
